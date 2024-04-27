@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IQ тест</title>
+    <link rel="icon" type="image/png" href="images/brain_ico.ico">
+
+    <link rel="stylesheet" href="css/0style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="header__nav">
+          <div class="header-title">
+            <img class="header__brain" src="images/brain.png" alt="" />
+            <p class="header__text"><b>готово!</b></p>
+          </div>
+
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="index.html" class="menu__item-link">главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="index.html#footer" class="menu__item-link"
+                >Информация о тесте</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="question1.html" class="menu__item-link">пройти тест</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="hamburger__icon"></span>
+            <span class="hamburger__icon"></span>
+            <span class="hamburger__icon"></span>
+            <svg
+              class="hamburger__close-icon"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M28 2.82L25.18 0L14 11.18L2.82 0L0 2.82L11.18 14L0 25.18L2.82 28L14 16.82L25.18 28L28 25.18L16.82 14L28 2.82Z"
+                fill="#FFC700"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="question-page question-final">
+      <div class="final-title">Ваш результат рассчитан:</div>
+      <div class="final-text">
+        <span>Вы относитесь к 3%</span> респондентов, чей уровень интеллекта более чем на 15
+        пунктов отличается от среднего в большую или меньшую сторону!
+      </div>
+      <div class="result-title">Скорее получите свой результат!</div>
+      <div class="result-text">
+        В целях защиты персональных данных результат теста, их подробная
+        интерпретация и рекомендации доступны в виде голосового сообщения по
+        звонку с вашего мобильного телефона
+      </div>
+      <div class="timer-wrapper">
+          <div class="timer-title">Звоните скорее, запись доступна всего </div>
+          <div id="timer" class="timer">
+            <span id="minutes">10</span>:<span id="seconds">00</span> минут
+          </div>
+      </div>
+      <a class="tell" href="tel:+380999999"><p>Позвонить и прослушать
+        результат</p> </a>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

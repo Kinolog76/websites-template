@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<link rel="stylesheet" href="css/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Space+Grotesk&display=swap&_v=20230617195711" rel="stylesheet" />
+	<title>Home</title>
+</head>
+
+<body>
+	<div class="gradient">
+		<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<linearGradient id="gradient" x1="1.78814e-07" y1="12" x2="24" y2="12" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#3300CC" />
+				<stop offset="1" stop-color="#E03616" />
+			</linearGradient>
+		</svg>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top_wrapper">
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+								<li class="menu__item"><a href="activities.html" class="menu__link">Activities</a></li>
+								<li class="menu__item"><a href="partners.html" class="menu__link">Partners</a></li>
+								<li class="menu__item"><a href="news.html" class="menu__link">News</a></li>
+								<li class="menu__item"><a href="resources.html" class="menu__link">Resources</a></li>
+								<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__social social">
+						<ul class="social__items">
+							<li class="social__item">
+								<a class="social__link" href="#" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16Z" fill="#231F20" />
+										<path d="M16.9897 22V15.9993H18.7648L19 13.9314H16.9897L16.9928 12.8964C16.9928 12.3571 17.0477 12.0681 17.8778 12.0681H18.9874V10H17.2122C15.0798 10 14.3292 11.0031 14.3292 12.6901V13.9317H13V15.9995H14.3292V22H16.9897Z" fill="#F3F3F3" />
+									</svg></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16Z" fill="#231F20" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.659 11.4113C12.659 12.1959 12.0684 12.8236 11.1202 12.8236H11.1028C10.1898 12.8236 9.59961 12.1959 9.59961 11.4113C9.59961 10.6102 10.2078 9.99997 11.1381 9.99997C12.0684 9.99997 12.6413 10.6102 12.659 11.4113ZM12.4802 13.9389V22.1097H9.76074V13.9389H12.4802ZM22.2874 22.1097L22.2875 17.4248C22.2875 14.9151 20.9459 13.747 19.1564 13.747C17.7125 13.747 17.0661 14.5401 16.7051 15.0964V13.9391H13.9853C14.0212 14.7058 13.9853 22.11 13.9853 22.11H16.7051V17.5467C16.7051 17.3025 16.7228 17.0589 16.7947 16.884C16.9912 16.3962 17.4387 15.8911 18.19 15.8911C19.1745 15.8911 19.568 16.6403 19.568 17.7383V22.1097H22.2874Z" fill="#F3F3F3" />
+									</svg></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16Z" fill="#231F20" />
+										<path d="M16.6406 14.5538L16.6658 14.969L16.2461 14.9181C14.7184 14.7232 13.3838 14.0623 12.2507 12.9522L11.6967 12.4013L11.554 12.8081C11.2518 13.7148 11.4449 14.6724 12.0744 15.3164C12.4102 15.6723 12.3346 15.7232 11.7554 15.5113C11.554 15.4435 11.3777 15.3927 11.3609 15.4181C11.3022 15.4774 11.5036 16.2486 11.6631 16.5536C11.8813 16.9773 12.3262 17.3925 12.8131 17.6383L13.2243 17.8332L12.7375 17.8417C12.2675 17.8417 12.2507 17.8501 12.301 18.0281C12.4689 18.5789 13.132 19.1636 13.8707 19.4178L14.3911 19.5958L13.9378 19.867C13.2663 20.2568 12.4773 20.4771 11.6883 20.494C11.3106 20.5025 11 20.5364 11 20.5618C11 20.6466 12.024 21.1211 12.62 21.3075C14.4079 21.8584 16.5315 21.6211 18.1263 20.6805C19.2595 20.011 20.3926 18.6806 20.9214 17.3925C21.2068 16.7062 21.4922 15.452 21.4922 14.8503C21.4922 14.4605 21.5174 14.4097 21.9874 13.9436C22.2644 13.6725 22.5246 13.3759 22.575 13.2911C22.6589 13.1301 22.6505 13.1301 22.2224 13.2742C21.509 13.5284 21.4083 13.4945 21.7608 13.1132C22.021 12.842 22.3316 12.3505 22.3316 12.2064C22.3316 12.181 22.2057 12.2234 22.063 12.2997C21.9119 12.3844 21.5761 12.5115 21.3243 12.5878L20.8711 12.7318L20.4598 12.4522C20.2331 12.2997 19.9142 12.1302 19.7463 12.0793C19.3182 11.9607 18.6635 11.9776 18.2774 12.1132C17.2282 12.4946 16.5651 13.4775 16.6406 14.5538Z" fill="#F3F3F3" />
+									</svg></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16Z" fill="#231F20" />
+										<path d="M16.0008 13.5589C17.3478 13.5589 18.44 14.6509 18.44 15.9981C18.44 17.3452 17.3478 18.4374 16.0008 18.4374C14.6535 18.4374 13.5615 17.3452 13.5615 15.9981C13.5615 14.6509 14.6535 13.5589 16.0008 13.5589Z" fill="white" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3445 9.99914C15.472 9.99894 15.6091 9.99901 15.7571 9.99907L16.001 9.99914C17.9548 9.99914 18.1864 10.0062 18.9579 10.0412C19.6714 10.0738 20.0586 10.1931 20.3166 10.2932C20.6581 10.4259 20.9015 10.5844 21.1575 10.8405C21.4136 11.0966 21.5722 11.3406 21.7051 11.6821C21.8053 11.9397 21.9246 12.3269 21.9571 13.0404C21.9922 13.8118 21.9998 14.0436 21.9998 15.9965C21.9998 17.9494 21.9922 18.1811 21.9571 18.9525C21.9245 19.666 21.8053 20.0532 21.7051 20.3109C21.5725 20.6524 21.4136 20.8955 21.1575 21.1515C20.9014 21.4076 20.6582 21.5662 20.3166 21.6988C20.0589 21.7994 19.6714 21.9183 18.9579 21.951C18.1865 21.986 17.9548 21.9936 16.001 21.9936C14.047 21.9936 13.8154 21.986 13.044 21.951C12.3305 21.918 11.9433 21.7988 11.6852 21.6987C11.3437 21.566 11.0998 21.4075 10.8436 21.1513C10.5875 20.8952 10.429 20.6519 10.296 20.3103C10.1959 20.0526 10.0765 19.6654 10.044 18.9519C10.009 18.1805 10.002 17.9488 10.002 15.9946C10.002 14.0405 10.009 13.81 10.044 13.0386C10.0767 12.3251 10.1959 11.9379 10.296 11.6799C10.4287 11.3384 10.5875 11.0945 10.8436 10.8384C11.0998 10.5823 11.3437 10.4237 11.6852 10.2908C11.9431 10.1902 12.3305 10.0713 13.044 10.0385C13.719 10.008 13.9807 9.99884 15.3445 9.99731V9.99914ZM19.9071 11.2142C19.4223 11.2142 19.029 11.6071 19.029 12.092C19.029 12.5768 19.4223 12.9701 19.9071 12.9701C20.3919 12.9701 20.7852 12.5768 20.7852 12.092C20.7852 11.6072 20.3919 11.2139 19.9071 11.2139V11.2142ZM12.243 15.9981C12.243 13.9229 13.9255 12.2403 16.0008 12.2402C18.0761 12.2402 19.7583 13.9228 19.7583 15.9981C19.7583 18.0735 18.0763 19.7553 16.001 19.7553C13.9256 19.7553 12.243 18.0735 12.243 15.9981Z" fill="white" />
+									</svg></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__bottom_wrapper">
+					<img class="header-logo__img" src="img/logo-2.png" alt="" />
+					<div class="header__descr descr">
+						<h1 class="descr__title">Excellence in entrepreneurship</h1>
+						<p class="descr__text">Expanding European entrepreneurship by boosting youth (self) employability and promoting a sharing resources culture.</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="about">
+				<div class="about__container">
+					<div class="about__wrapper">
+						<div class="about__title title">
+							<h3>About</h3>
+						</div>
+						<div class="about__text text-about">
+							<p class="text-about__top">
+								ExcellEnt is a project funded by the Horizon Europe programme of the European Union, with the mission to strengthen entrepreneurial practices and build bridges across EU entrepreneurial ecosystems </p>
+							<p class="text-about__bot">
+								It aims to design new methodological approaches & tools and offer the resources and support needed to foster the emergence of innovative entrepreneurs </p>
+							<a href="/about/" class="btn about__button">
+								View more <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_304_1151)">
+										<path d="M34.1818 7L39.1818 12M39.1818 12L34.1818 17M39.1818 12L0 12" stroke="#231F20" />
+									</g>
+									<defs>
+										<clipPath id="clip0_304_1151">
+											<rect width="40" height="24" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="background">
+				<section class="process">
+					<div class="process__container">
+						<div class="process__wrapper-items">
+							<div class="process__title title">
+								<h3>
+									Process<br> stages </h3>
+							</div>
+							<div class="process__item_wrapper item-process item-process_odd">
+								<div class="item-process_box">
+									<div class="item-process__num">01</div>
+									<h3 class="item-process__title">
+										Defining an actionable skill-building model for successful entrepreneurship </h3>
+									<div class="item-process__text">
+										AIM: to raise awareness and foster involvement of experienced entrepreneurs across EU ecosystems. </div>
+								</div>
+							</div>
+							<div class="process__item_wrapper item-process item-process_even">
+								<div class="item-process_box">
+									<div class="item-process__num">02</div>
+									<h3 class="item-process__title">
+										Identifying and make available the resources for entrepreneurial projects development </h3>
+									<div class="item-process__text">
+										AIM: to build a bridge from the academic education environment towards the real entrepreneurial world. </div>
+								</div>
+							</div>
+							<div class="process__item_wrapper item-process item-process_odd">
+								<div class="item-process_box">
+									<div class="item-process__num">03</div>
+									<h3 class="item-process__title">
+										Enhancing connectedness and collaborating with ecosystem representatives to support entrepreneurs </h3>
+									<div class="item-process__text">
+										AIM: to raise awareness and foster involvement of experienced entrepreneurs across EU ecosystems </div>
+								</div>
+							</div>
+							<div class="process__item_wrapper item-process item-process_even">
+								<div class="item-process_box">
+									<div class="item-process__num">04</div>
+									<h3 class="item-process__title">
+										Widening EU entrepreneurial ecosystems connectedness </h3>
+									<div class="item-process__text">
+										AIM: to enhance participation beyond the 6 ecosystems represented in the consortium </div>
+								</div>
+							</div>
+							<div class="process__item_wrapper item-process item-process_odd">
+								<div class="item-process_box">
+									<div class="item-process__num">05</div>
+									<h3 class="item-process__title">
+										Consolidating the community and making the project activities sustainable </h3>
+									<div class="item-process__text">
+										AIM: to establish concrete and operational partnerships with external support organizations </div>
+								</div>
+							</div>
+
+						</div>
+						<a href="/about/" class="btn process__button">
+							View more <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_304_1151)">
+									<path d="M34.1818 7L39.1818 12M39.1818 12L34.1818 17M39.1818 12L0 12" stroke="#231F20" />
+								</g>
+								<defs>
+									<clipPath id="clip0_304_1151">
+										<rect width="40" height="24" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+				</section>
+				<section class="target">
+					<div class="target__container">
+						<div class="target__wrapper">
+							<div class="target__descr descr-target">
+								<div class="descr-target__title title">
+									Target groups </div>
+								<p class="descr-target__text">
+									It aims to design new methodological approaches & tools and offer the resources and support needed to foster the emergence of innovative entrepreneurs. </p>
+							</div>
+
+							<div class="target__graphic-box graphic">
+								<img src="img/icons/target-groups.svg" alt="">
+								<div class="graphic__stratup graphic__items">
+									<p>Incubators & Startup <br> supporting</p>
+									<span class="graphic__icons">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g id="incubators">
+												<g id="Vector">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M25.2414 1.99976H24.7586C15.5031 1.99976 8 9.50285 8 18.7584V36.9998H42V18.7584C42 9.50285 34.4969 1.99976 25.2414 1.99976ZM24.7586 -0.000244141C14.3985 -0.000244141 6 8.39828 6 18.7584V38.9998H44V18.7584C44 8.39828 35.6015 -0.000244141 25.2414 -0.000244141H24.7586Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M42.4828 38.9998H5.51724C4.67929 38.9998 4 39.679 4 40.517V44.4825C4 45.3205 4.67929 45.9998 5.51724 45.9998H42.4828C43.3207 45.9998 44 45.3205 44 44.4825V40.517C44 39.6791 43.3207 38.9998 42.4828 38.9998ZM5.51724 36.9998C3.57472 36.9998 2 38.5745 2 40.517V44.4825C2 46.425 3.57472 47.9998 5.51724 47.9998H42.4828C44.4253 47.9998 46 46.425 46 44.4825V40.517C46 38.5745 44.4253 36.9998 42.4828 36.9998H5.51724Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M34.4828 31.9998H15.5172C14.6793 31.9998 14 32.679 14 33.517V36.9998H36V33.517C36 32.6791 35.3207 31.9998 34.4828 31.9998ZM15.5172 29.9998C13.5747 29.9998 12 31.5745 12 33.517V38.9998H38V33.517C38 31.5745 36.4253 29.9998 34.4828 29.9998H15.5172Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M24 25.1191C21.9823 25.0218 19.9262 24.6057 18.2765 23.5583C16.2759 22.2881 15 20.1696 15 16.9998V15.9998H16C20.1134 15.9998 22.6736 17.2644 24.1844 19.0277C25.6677 20.759 26 22.8102 26 24.1426V31.9998H24V25.1191ZM22.6656 20.329C23.4179 21.207 23.7728 22.2219 23.9166 23.1117C22.1589 23.0083 20.5557 22.6363 19.3485 21.8698C18.172 21.1228 17.2888 19.9506 17.0589 18.0325C20.0672 18.225 21.7308 19.2379 22.6656 20.329Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M26 25.1191C28.0177 25.0218 30.0738 24.6057 31.7235 23.5583C33.7241 22.2881 35 20.1696 35 16.9998V15.9998H34C29.8866 15.9998 27.3264 17.2644 25.8156 19.0277C24.3323 20.759 24 22.8102 24 24.1426V31.9998H26V25.1191ZM27.3344 20.329C26.5821 21.207 26.2272 22.2219 26.0834 23.1117C27.8411 23.0083 29.4443 22.6363 30.6515 21.8698C31.828 21.1228 32.7112 19.9506 32.9411 18.0325C29.9328 18.225 28.2692 19.2379 27.3344 20.329Z" fill="#231F20" />
+												</g>
+											</g>
+										</svg>
+
+									</span>
+									<span class="graphic__stratup-hover"></span>
+								</div>
+								<div class="graphic__universities graphic__items">
+									<p>Universities & educational institutions</p>
+									<span class="graphic__icons">
+										<svg width="56" height="50" viewBox="0 0 56 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g id="universities">
+												<g id="Vector">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M53.2383 17.6337L27.8613 2.89038L2.48438 17.6337L27.8613 32.3771L53.2383 17.6337ZM28.866 1.16105C28.2448 0.800158 27.4778 0.800158 26.8566 1.16105L1.47968 15.9044C0.152604 16.6754 0.15261 18.5921 1.47968 19.3631L26.8566 34.1064C27.4778 34.4673 28.2448 34.4673 28.866 34.1064L54.243 19.3631C55.57 18.5921 55.57 16.6754 54.243 15.9044L28.866 1.16105Z" fill="#231F20" />
+													<path d="M5.90944 21.4092C5.90944 20.8569 6.35716 20.4092 6.90944 20.4092C7.46173 20.4092 7.90944 20.8569 7.90944 21.4092V33.9546C7.90944 34.5069 7.46173 34.9546 6.90944 34.9546C6.35716 34.9546 5.90944 34.5069 5.90944 33.9546V21.4092Z" fill="#231F20" />
+													<path d="M17.7002 12.762C18.1785 12.4858 18.7901 12.6497 19.0662 13.128C19.3424 13.6063 19.1785 14.2179 18.7002 14.494L7.26387 21.0968C6.78558 21.3729 6.17399 21.2091 5.89785 20.7308C5.6217 20.2525 5.78558 19.6409 6.26387 19.3647L17.7002 12.762Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M14.1822 24.7728V40.0205C14.1822 41.7579 15.3348 43.4912 17.539 44.8425C19.7266 46.1835 22.812 47.0455 26.2731 47.0455C29.7385 47.0455 33.2116 46.1811 35.7877 44.812C38.4295 43.4081 39.8185 41.6601 39.8185 40.0205V25.6299H41.8185V40.0205C41.8185 42.813 39.5498 45.0775 36.7263 46.5781C33.8372 48.1135 30.0375 49.0455 26.2731 49.0455C22.5042 49.0455 19.0442 48.1111 16.4938 46.5476C13.96 44.9944 12.1822 42.7152 12.1822 40.0205V24.7728H14.1822Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4549 28.539V45.2412C37.4549 45.7935 37.0072 46.2412 36.4549 46.2412C35.9026 46.2412 35.4549 45.7935 35.4549 45.2412V28.539H37.4549Z" fill="#231F20" />
+												</g>
+											</g>
+										</svg>
+
+									</span>
+									<span class="graphic__universities-hover"></span>
+								</div>
+								<div class="graphic__rocket  graphic__items">
+									<p>Entrepreneurs <br> and Startups</p>
+									<span class="graphic__icons">
+										<svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g id="Startup incubators">
+												<g id="Vector">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M13.8568 34.4034L11.2394 36.0425L16.8264 41.6946L18.4467 39.0468L13.8568 34.4034ZM20.758 38.7754L14.125 32.0652L10.2794 34.4736C9.2793 35.0999 9.11799 36.5059 9.94967 37.3473L15.5367 42.9994C16.3684 43.8408 17.7582 43.6776 18.3773 42.6659L20.758 38.7754Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M6.20241 37.8434C6.55856 38.2037 6.55856 38.7879 6.20241 39.1482L2.05684 43.342C1.70069 43.7023 1.12326 43.7023 0.767112 43.342C0.410962 42.9817 0.410963 42.3976 0.767112 42.0373L4.91268 37.8434C5.26883 37.4831 5.84626 37.4831 6.20241 37.8434Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M13.9408 46.7903C14.297 47.1506 14.297 47.7348 13.9408 48.0951L10.348 51.7298C9.99185 52.0901 9.41442 52.0901 9.05827 51.7298C8.70212 51.3695 8.70212 50.7853 9.05827 50.425L12.6511 46.7903C13.0072 46.43 13.5847 46.43 13.9408 46.7903Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M10.9007 41.4781C11.2569 41.8384 11.2569 42.4226 10.9007 42.7829L5.64968 48.0951C5.29353 48.4554 4.7161 48.4554 4.35995 48.0951C4.0038 47.7348 4.0038 47.1506 4.35995 46.7903L9.611 41.4781C9.96714 41.1178 10.5446 41.1178 10.9007 41.4781Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M46.7368 18.8313L33.8395 5.78371L35.1293 4.47895L48.0266 17.5265L46.7368 18.8313Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M30.0625 22.6523C31.4871 24.0935 33.7968 24.0935 35.2214 22.6523C36.646 21.2111 36.646 18.8745 35.2214 17.4333C33.7968 15.9921 31.4871 15.9921 30.0625 17.4333C28.6379 18.8745 28.6379 21.2111 30.0625 22.6523ZM28.7727 23.9571C30.9096 26.1189 34.3742 26.1189 36.5111 23.9571C38.648 21.7953 38.648 18.2903 36.5111 16.1285C34.3742 13.9668 30.9096 13.9668 28.7727 16.1285C26.6358 18.2903 26.6358 21.7953 28.7727 23.9571Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M45.2396 7.67613C45.1656 7.50781 45.0326 7.37323 44.8662 7.29842C38.5667 4.46603 31.1935 5.85101 26.319 10.7823L11.6377 25.6346C10.5693 26.7155 10.5693 28.468 11.6377 29.5489L23.2453 41.2917C24.3138 42.3726 26.0461 42.3726 27.1145 41.2917L41.7958 26.4394C46.6703 21.5081 48.0393 14.049 45.2396 7.67613ZM45.607 5.61225C46.186 5.87259 46.649 6.34096 46.9063 6.92672C50.0126 13.9973 48.4937 22.273 43.0855 27.7442L28.4042 42.5965C26.6235 44.398 23.7363 44.398 21.9556 42.5965L10.348 30.8537C8.56726 29.0522 8.56726 26.1314 10.348 24.3299L25.0293 9.47758C30.4375 4.00638 38.6178 2.46978 45.607 5.61225Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M33.4915 34.8404L34.8449 36.2096C38.0151 39.4167 38.0151 44.6165 34.8449 47.8236C34.137 48.5397 32.9893 48.5397 32.2814 47.8236L26.4696 41.9441L33.4915 34.8404ZM33.4915 37.4499L29.0491 41.9441L33.5632 46.5107C36.0131 44.0236 36.0104 39.9982 33.5552 37.5144L33.4915 37.4499Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.0147 19.1833L16.6613 17.8142C13.4911 14.6071 8.35128 14.6071 5.18111 17.8142C4.47321 18.5303 4.47321 19.6914 5.18111 20.4076L10.9929 26.287L18.0147 19.1833ZM15.4353 19.1833L10.9929 23.6775L6.47881 19.1109C8.93732 16.6324 12.9164 16.6351 15.3716 19.1189L15.4353 19.1833Z" fill="#231F20" />
+												</g>
+											</g>
+										</svg>
+
+									</span>
+									<span class="graphic__rocket-hover"></span>
+								</div>
+								<div class="graphic__investors  graphic__items">
+									<p>Investors</p>
+									<span class="graphic__icons">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g id="Investors">
+												<g id="Vector">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M16.0001 43.0908C22.1254 43.0908 27.091 38.1252 27.091 31.9999C27.091 25.8745 22.1254 20.909 16.0001 20.909C9.87475 20.909 4.90918 25.8745 4.90918 31.9999C4.90918 38.1252 9.87475 43.0908 16.0001 43.0908ZM16.0001 45.0908C23.23 45.0908 29.091 39.2298 29.091 31.9999C29.091 24.77 23.23 18.909 16.0001 18.909C8.77018 18.909 2.90918 24.77 2.90918 31.9999C2.90918 39.2298 8.77018 45.0908 16.0001 45.0908Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M4.81827 16.2726C4.81827 15.168 5.7137 14.2726 6.81827 14.2726H11.8573C12.9618 14.2726 13.8573 15.168 13.8573 16.2726V20.1038H11.8573L11.8573 16.2726L6.81827 16.2726V25.2856H4.81827V16.2726Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8572 11.1817C11.8572 10.0771 12.7527 9.18171 13.8572 9.18171H18.6365C19.741 9.18171 20.6365 10.0771 20.6365 11.1817V20.2337H18.6365V11.1817L13.8572 11.1817V19.6363H11.8572V11.1817Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.6365 5.36353C18.6365 4.25896 19.5319 3.36353 20.6365 3.36353H25.1819C26.2865 3.36353 27.1819 4.25896 27.1819 5.36353V25.3246H25.1819V5.36353L20.6365 5.36353V19.6363H18.6365V5.36353Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M25.1819 11.1817C25.1819 10.0771 26.0773 9.18171 27.1819 9.18171H36.7779L44.6365 17.0402V40.2726H25.4546V38.2726H42.6365V17.8686L35.9495 11.1817L27.1819 11.1817V19.6363H25.1819V11.1817Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M38.1092 25.7272H26.8801V23.7272H38.1092C38.6614 23.7272 39.1092 24.1749 39.1092 24.7272C39.1092 25.2794 38.6614 25.7272 38.1092 25.7272Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M38.1092 30.0908H27.7372V28.0908H38.1092C38.6614 28.0908 39.1092 28.5385 39.1092 29.0908C39.1092 29.6431 38.6614 30.0908 38.1092 30.0908Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M38.1092 34.4544H27.7372V32.4544H38.1092C38.6614 32.4544 39.1092 32.9022 39.1092 33.4544C39.1092 34.0067 38.6614 34.4544 38.1092 34.4544Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M37.3637 10.1817V16.909C37.3637 17.4613 37.8114 17.909 38.3637 17.909H43.6365V19.909H38.3637C36.7069 19.909 35.3637 18.5658 35.3637 16.909V10.1817H37.3637Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0001 25.3108C13.3256 25.7526 12.091 27.2775 12.091 29.0908C12.091 31.2497 13.8412 32.9999 16.0001 32.9999C17.0545 32.9999 17.9092 33.8546 17.9092 34.909C17.9092 35.9633 17.0545 36.8181 16.0001 36.8181C14.9457 36.8181 14.091 35.9633 14.091 34.909H12.091C12.091 36.7223 13.3256 38.2472 15.0001 38.689V40.7272H17.0001V38.689C18.6746 38.2472 19.9092 36.7223 19.9092 34.909C19.9092 32.75 18.159 30.9999 16.0001 30.9999C14.9457 30.9999 14.091 30.1452 14.091 29.0908C14.091 28.0364 14.9457 27.1817 16.0001 27.1817C17.0545 27.1817 17.9092 28.0364 17.9092 29.0908H19.9092C19.9092 27.2775 18.6746 25.7526 17.0001 25.3108V23.2726H15.0001V25.3108Z" fill="#231F20" />
+												</g>
+											</g>
+										</svg>
+
+									</span>
+									<span class="graphic__investors-hover"></span>
+								</div>
+								<div class="graphic__policy  graphic__items">
+									<p>Policy makers</p>
+									<span class="graphic__icons"><svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g id="Policy makers">
+												<g id="Vector">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M37 39.2141C35.1853 39.2141 33.7143 40.6852 33.7143 42.4998C33.7143 44.3145 35.1853 45.7855 37 45.7855V47.7855C34.0808 47.7855 31.7143 45.419 31.7143 42.4998C31.7143 39.5806 34.0808 37.2141 37 37.2141V39.2141Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M5.18367 39.2141C3.44796 39.2141 2 40.6623 2 42.4998C2 44.3373 3.44796 45.7855 5.18367 45.7855H13.551V47.7855H5.18367C2.29823 47.7855 0 45.3962 0 42.4998C0 39.6035 2.29823 37.2141 5.18367 37.2141H36.1429V39.2141H5.18367Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M36.1429 13.4998H13.8571V11.4998H36.1429V13.4998Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M36.1429 21.2141H13.8571V19.2141H36.1429V21.2141Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M36.1429 29.7855H13.8571V27.7855H36.1429V29.7855Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M8.57143 5.21411C8.57143 3.00497 10.3623 1.21411 12.5714 1.21411H41.4286V43.7855C41.4286 45.9947 39.6377 47.7855 37.4286 47.7855H9.57143V45.7855H37.4286C38.5331 45.7855 39.4286 44.8901 39.4286 43.7855V3.21411H12.5714C11.4669 3.21411 10.5714 4.10954 10.5714 5.21411V38.5316H8.57143V5.21411Z" fill="#231F20" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M39.4286 1.21411H44.7143C47.6335 1.21411 50 3.58061 50 6.49983C50 9.41904 47.6335 11.7855 44.7143 11.7855H39.4286V1.21411ZM41.4286 3.21411V9.78554H44.7143C46.5289 9.78554 48 8.31448 48 6.49983C48 4.68518 46.5289 3.21411 44.7143 3.21411H41.4286Z" fill="#231F20" />
+												</g>
+											</g>
+										</svg>
+									</span>
+									<span class="graphic__policy-hover"></span>
+								</div>
+							</div>
+						</div>
+				</section>
+
+				<section class="objectives">
+					<div class="objectives__container">
+						<div class="objectives__title title title_flex">
+							Objectives <span class="title__decor"></span>
+						</div>
+						<ul class="objectives__list-wrapper list-objectives">
+							<li class="list-objectives__item">
+								Identification of the entrepreneurial success model </li>
+							<li class="list-objectives__item">
+								Integration of theoretical models & field practices </li>
+							<li class="list-objectives__item">
+								Launch of European Entrepreneurship Academy </li>
+							<li class="list-objectives__item">
+								Scale-up missions and other support programs for startups </li>
+							<li class="list-objectives__item">
+								Connectedness of cross-border entrepreneurial ecosystems </li>
+							<li class="list-objectives__item">
+								Excellence in Entrepreneurship Conference </li>
+						</ul>
+						<a href="/about/" class="btn objectives__button">
+							View more <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_304_1151)">
+									<path d="M34.1818 7L39.1818 12M39.1818 12L34.1818 17M39.1818 12L0 12" stroke="#231F20" />
+								</g>
+								<defs>
+									<clipPath id="clip0_304_1151">
+										<rect width="40" height="24" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+				</section>
+			</div>
+
+			<section class="news">
+				<div class="news__container">
+					<div class="news__title title">Our news</div>
+					<div class="news__box box-news">
+
+						<div class="box-news__item">
+							<div class="box-news__img-box">
+								<img class="box-news__img" src="img/card-1.jpg" alt="">
+							</div>
+
+							<a href="" class="box-news__descr">
+								post-8 </a>
+							<div class="box-news__overlay overlay">
+								<a href="" class="overlay__link"></a>
+								<div class="overlay__title">post-8</div>
+								<div class="overlay__descr">
+									<a class="overlay__category _partnerships-bg" href="">Partnerships</a>
+									<div class="overlay__date">25 June, 2023</div>
+								</div>
+								<div class="overlay__text">
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ab blanditiis voluptas. Deserunt ea cupiditate excepturi maiores nam autem omnis praesentium? Illo incidunt laudantium quas maiores atque perferendis error voluptate?
+								</div>
+							</div>
+						</div>
+
+
+						<div class="box-news__item">
+							<div class="box-news__img-box">
+								<img class="box-news__img" src="img/card-3.jpg" alt="">
+							</div>
+
+							<a href="" class="box-news__descr">
+								post-7 </a>
+							<div class="box-news__overlay overlay">
+								<a href="" class="overlay__link"></a>
+								<div class="overlay__title">post-7</div>
+								<div class="overlay__descr">
+									<a class="overlay__category _event-bg" href="">Events</a>
+									<div class="overlay__date">25 June, 2023</div>
+								</div>
+								<div class="overlay__text">
+									<p>Introduction In the fast-paced world of project management, launching a new endeavor can be both exciting and challenging. To embark on a successful journey, it&#8217;s essential to utilize various elements that capture attention, organize information, and provide valuable insights. In this article, we explore the power of 10 blocks of text, a bulleted list, a [&hellip;]</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="box-news__item">
+							<div class="box-news__img-box">
+								<img class="box-news__img" src="img/card-11.jpg" alt="">
+							</div>
+
+							<a href="" class="box-news__descr">
+								post-5 </a>
+							<div class="box-news__overlay overlay">
+								<a href="" class="overlay__link"></a>
+								<div class="overlay__title">post-5</div>
+								<div class="overlay__descr">
+									<a class="overlay__category _event-bg" href="">Events</a>
+									<div class="overlay__date">23 June, 2023</div>
+								</div>
+								<div class="overlay__text">
+									<p>evable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#8217;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary [&hellip;]</p>
+								</div>
+							</div>
+						</div>
+
+						<span class="news__border"></span>
+					</div>
+					<a href="/news/" class="btn news__button">
+						All news <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_304_1151)">
+								<path d="M34.1818 7L39.1818 12M39.1818 12L34.1818 17M39.1818 12L0 12" stroke="#231F20" />
+							</g>
+							<defs>
+								<clipPath id="clip0_304_1151">
+									<rect width="40" height="24" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<img src="img/footer-logo.png" alt="" />
+				</div>
+				<div class="footer__content">
+					<div class="footer__text">
+						<p>Funded by the Horizon Europe Programme of the European Union under Grant Agreement number 101100515. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Innovation Council and SMEs Executive Agency (EISMEA). Neither the European Union nor the EISMEA can be held responsible for them.</p>
+						<p>If you are a part of the Greece, Ireland, France, Bulgaria, Turkey, Ukraine Tech ecosystem and want to contribute to the mission and to leverage the development of enterpreneurship, please fill the form.</p>
+						<div data-da=".footer__items, 768, 3" class="footer__social">
+							<ul class="social__items">
+								<li class="social__item">
+									<a class="social__link" href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16Z" fill="#231F20" />
+											<path d="M16.9897 22V15.9993H18.7648L19 13.9314H16.9897L16.9928 12.8964C16.9928 12.3571 17.0477 12.0681 17.8778 12.0681H18.9874V10H17.2122C15.0798 10 14.3292 11.0031 14.3292 12.6901V13.9317H13V15.9995H14.3292V22H16.9897Z" fill="#F3F3F3" />
+										</svg></a>
+								</li>
+								<li class="social__item">
+									<a class="social__link" href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16Z" fill="#231F20" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M12.659 11.4113C12.659 12.1959 12.0684 12.8236 11.1202 12.8236H11.1028C10.1898 12.8236 9.59961 12.1959 9.59961 11.4113C9.59961 10.6102 10.2078 9.99997 11.1381 9.99997C12.0684 9.99997 12.6413 10.6102 12.659 11.4113ZM12.4802 13.9389V22.1097H9.76074V13.9389H12.4802ZM22.2874 22.1097L22.2875 17.4248C22.2875 14.9151 20.9459 13.747 19.1564 13.747C17.7125 13.747 17.0661 14.5401 16.7051 15.0964V13.9391H13.9853C14.0212 14.7058 13.9853 22.11 13.9853 22.11H16.7051V17.5467C16.7051 17.3025 16.7228 17.0589 16.7947 16.884C16.9912 16.3962 17.4387 15.8911 18.19 15.8911C19.1745 15.8911 19.568 16.6403 19.568 17.7383V22.1097H22.2874Z" fill="#F3F3F3" />
+										</svg></a>
+								</li>
+								<li class="social__item">
+									<a class="social__link" href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16Z" fill="#231F20" />
+											<path d="M16.6406 14.5538L16.6658 14.969L16.2461 14.9181C14.7184 14.7232 13.3838 14.0623 12.2507 12.9522L11.6967 12.4013L11.554 12.8081C11.2518 13.7148 11.4449 14.6724 12.0744 15.3164C12.4102 15.6723 12.3346 15.7232 11.7554 15.5113C11.554 15.4435 11.3777 15.3927 11.3609 15.4181C11.3022 15.4774 11.5036 16.2486 11.6631 16.5536C11.8813 16.9773 12.3262 17.3925 12.8131 17.6383L13.2243 17.8332L12.7375 17.8417C12.2675 17.8417 12.2507 17.8501 12.301 18.0281C12.4689 18.5789 13.132 19.1636 13.8707 19.4178L14.3911 19.5958L13.9378 19.867C13.2663 20.2568 12.4773 20.4771 11.6883 20.494C11.3106 20.5025 11 20.5364 11 20.5618C11 20.6466 12.024 21.1211 12.62 21.3075C14.4079 21.8584 16.5315 21.6211 18.1263 20.6805C19.2595 20.011 20.3926 18.6806 20.9214 17.3925C21.2068 16.7062 21.4922 15.452 21.4922 14.8503C21.4922 14.4605 21.5174 14.4097 21.9874 13.9436C22.2644 13.6725 22.5246 13.3759 22.575 13.2911C22.6589 13.1301 22.6505 13.1301 22.2224 13.2742C21.509 13.5284 21.4083 13.4945 21.7608 13.1132C22.021 12.842 22.3316 12.3505 22.3316 12.2064C22.3316 12.181 22.2057 12.2234 22.063 12.2997C21.9119 12.3844 21.5761 12.5115 21.3243 12.5878L20.8711 12.7318L20.4598 12.4522C20.2331 12.2997 19.9142 12.1302 19.7463 12.0793C19.3182 11.9607 18.6635 11.9776 18.2774 12.1132C17.2282 12.4946 16.5651 13.4775 16.6406 14.5538Z" fill="#F3F3F3" />
+										</svg></a>
+								</li>
+								<li class="social__item">
+									<a class="social__link" href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16Z" fill="#231F20" />
+											<path d="M16.0008 13.5589C17.3478 13.5589 18.44 14.6509 18.44 15.9981C18.44 17.3452 17.3478 18.4374 16.0008 18.4374C14.6535 18.4374 13.5615 17.3452 13.5615 15.9981C13.5615 14.6509 14.6535 13.5589 16.0008 13.5589Z" fill="white" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3445 9.99914C15.472 9.99894 15.6091 9.99901 15.7571 9.99907L16.001 9.99914C17.9548 9.99914 18.1864 10.0062 18.9579 10.0412C19.6714 10.0738 20.0586 10.1931 20.3166 10.2932C20.6581 10.4259 20.9015 10.5844 21.1575 10.8405C21.4136 11.0966 21.5722 11.3406 21.7051 11.6821C21.8053 11.9397 21.9246 12.3269 21.9571 13.0404C21.9922 13.8118 21.9998 14.0436 21.9998 15.9965C21.9998 17.9494 21.9922 18.1811 21.9571 18.9525C21.9245 19.666 21.8053 20.0532 21.7051 20.3109C21.5725 20.6524 21.4136 20.8955 21.1575 21.1515C20.9014 21.4076 20.6582 21.5662 20.3166 21.6988C20.0589 21.7994 19.6714 21.9183 18.9579 21.951C18.1865 21.986 17.9548 21.9936 16.001 21.9936C14.047 21.9936 13.8154 21.986 13.044 21.951C12.3305 21.918 11.9433 21.7988 11.6852 21.6987C11.3437 21.566 11.0998 21.4075 10.8436 21.1513C10.5875 20.8952 10.429 20.6519 10.296 20.3103C10.1959 20.0526 10.0765 19.6654 10.044 18.9519C10.009 18.1805 10.002 17.9488 10.002 15.9946C10.002 14.0405 10.009 13.81 10.044 13.0386C10.0767 12.3251 10.1959 11.9379 10.296 11.6799C10.4287 11.3384 10.5875 11.0945 10.8436 10.8384C11.0998 10.5823 11.3437 10.4237 11.6852 10.2908C11.9431 10.1902 12.3305 10.0713 13.044 10.0385C13.719 10.008 13.9807 9.99884 15.3445 9.99731V9.99914ZM19.9071 11.2142C19.4223 11.2142 19.029 11.6071 19.029 12.092C19.029 12.5768 19.4223 12.9701 19.9071 12.9701C20.3919 12.9701 20.7852 12.5768 20.7852 12.092C20.7852 11.6072 20.3919 11.2139 19.9071 11.2139V11.2142ZM12.243 15.9981C12.243 13.9229 13.9255 12.2403 16.0008 12.2402C18.0761 12.2402 19.7583 13.9228 19.7583 15.9981C19.7583 18.0735 18.0763 19.7553 16.001 19.7553C13.9256 19.7553 12.243 18.0735 12.243 15.9981Z" fill="white" />
+										</svg></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__items">
+						<div class="footer__nav-wrapper">
+							<ul class="footer__nav">
+								<li class="footer__nav-link"><a href="home.html">Home</a></li>
+								<li class="footer__nav-link"><a href="about.html">About</a></li>
+								<li class="footer__nav-link"><a href="activities.html">Activities</a></li>
+								<li class="footer__nav-link"><a href="partners.html">Partners</a></li>
+								<li class="footer__nav-link"><a href="news.html">News</a></li>
+								<li class="footer__nav-link"><a href="resources.html">Resources</a></li>
+							</ul>
+							<ul class="footer__nav">
+								<li class="footer__nav-link"><a href="contact.html">Contact</a></li>
+								<li class="footer__nav-link"><a href="#">Terms of services</a></li>
+							</ul>
+						</div>
+						<div class="footer__europe">
+							<p class="footer__europe-text">© 2023 Excellent. All right reserved. Powered by A.B. Institute of Enterprenership Development Ltd.</p>
+						</div>
+					</div>
+					<div class="footer__img">
+						<img src="img/footer-excellent.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IQ тест</title>
+    <link rel="icon" type="image/png" href="images/brain_ico.ico" />
+
+    <link rel="stylesheet" href="css/0style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="header__nav">
+          <div class="header-title">
+            <img class="header__brain" src="images/brain.png" alt="" />
+            <p class="header__text">тест на определение IQ</p>
+          </div>
+
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="index.html" class="menu__item-link">главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="index.html#footer" class="menu__item-link"
+                >Информация о тесте</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="question1.html" class="menu__item-link">пройти тест</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="hamburger__icon"></span>
+            <span class="hamburger__icon"></span>
+            <span class="hamburger__icon"></span>
+            <svg
+              class="hamburger__close-icon"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M28 2.82L25.18 0L14 11.18L2.82 0L0 2.82L11.18 14L0 25.18L2.82 28L14 16.82L25.18 28L28 25.18L16.82 14L28 2.82Z"
+                fill="#FFC700"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="question-page">
+      <div class="progress-wrapper">
+        <progress class="progress" value="28.56" max="100"></progress>
+      </div>
+      <div class="question">Укажите ваш возраст:</div>
+      <div class="answers-wrapper">
+        <div class="answers-box">
+          <input type="radio" id="answer1" name="question1" value="1" />
+          <label class="answers-text" for="answer1">До 18</label>
+        </div>
+        <div class="answers-box">
+          <input type="radio" id="answer2" name="question1" value="2" />
+          <label class="answers-text" for="answer2">От 18 до 28</label>
+        </div>
+        <div class="answers-box">
+          <input type="radio" id="answer3" name="question1" value="3" />
+          <label class="answers-text" for="answer3">От 29 до 35</label>
+        </div>
+        <div class="answers-box">
+          <input type="radio" id="answer4" name="question1" value="4" />
+          <label class="answers-text" for="answer4">От 36</label>
+        </div>
+      </div>
+      <button
+        onclick="window.location.href = 'question3.html'"
+        id="nextButton"
+        class="next-btn"
+        disabled
+      >
+        Далее
+      </button>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

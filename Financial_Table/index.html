@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/0style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="table__container">
+      <div class="backoffice-table-box">
+        <table class="backoffice-table_1">
+          <tr class="">
+            <td colspan="8" class="bg_light-blue">
+              <input autocomplete="off" placeholder="Январь" type="text" class="office-input__edit backoffice-month__input text-center bg_light-blue fw_700 text_dark-blue fz_15">
+            </td>
+          </tr>
+          <tr class="fw_700 text-center bg_gray">
+            <td colspan="8" class="border">BACKOFFICE</td>
+          </tr>
+          <tr class="fw_700 border bg_light-gray">
+            <td class="widht-20"></td>
+            <td class="pr-60 text-nowrap widht-175">Backoffice: сотрудники</td>
+            <td class=" widht-80">позиция</td>
+            <td class=" widht-80">на руки</td>
+            <td class=" widht-80">налог</td>
+            <td class=" widht-80">к выплате</td>
+          </tr>
+          <tr class="">
+            <td>
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td><input class="office-input__edit office-input " type="text" placeholder="Сотрудник 1"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text" placeholder="0.00€"></td>
+          </tr>
+          <tr class="bg_light-gray">
+            <td></td>
+            <td class="text-right fw_700">Backoffice</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td><input class="office-input__edit office-input " type="text" placeholder="Бекрасход 1"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text" placeholder="0.00€"></td>
+          </tr>
+          <tr>
+            <td colspan="8"></td>
+          </tr>
+          <tr class="fw_600">
+            <td></td>
+            <td><button class="office-button">Редактировать</button></td>
+            <td class="bg_light-gray text-center " colspan="3">Стоимость backoffice</td>
+            <td class="bg_light-gray" colspan="2"><span class="backoffice-cost">0,00</span>€</td>
+          </tr>
+        </table>
+        <table class="backoffice-table_2">
+          <tr>
+            <td colspan="2" class="bg_dark-blue text-center "><input placeholder="Неделя 1 (01.01-08.01)" type="text" class=" text-center office-input__edit color-white"></td>
+          </tr>
+          <tr class="bg_light-blue fw_600 text-center">
+            <td class="border">план (в €)</td>
+            <td class="border">факт (в €)</td>
+          </tr>
+          <tr class="border height-20">
+            <td colspan="2" class="bg_gray"></td>
+          </tr>
+          <tr class="border height-20">
+            <td colspan="2"></td>
+          </tr>
+          <tr class="">
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+          </tr>
+          <tr class="bg_light-gray height-20 border">
+            <td colspan="2"></td>
+          </tr>
+          <tr class="">
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+          </tr>
+        </table>
+        <table class="backoffice-table_3">
+          <tr>
+            <td colspan="2" class="bg_dark-blue text-center "><input placeholder="Неделя 2 (09.01-15.01)" type="text" class=" text-center office-input__edit color-white"></td>
+          </tr>
+          <tr class="bg_light-blue fw_600 text-center">
+            <td class="border">план (в €)</td>
+            <td class="border">факт (в €)</td>
+          </tr>
+          <tr class="border height-20">
+            <td colspan="2" class="bg_gray"></td>
+          </tr>
+          <tr class="border height-20">
+            <td colspan="2"></td>
+          </tr>
+          <tr class="">
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+          </tr>
+          <tr class="bg_light-gray height-20 border">
+            <td colspan="2"></td>
+          </tr>
+          <tr class="">
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+          </tr>
+        </table>
+        <table class="backoffice-table_4">
+          <tr>
+            <td colspan="2" class="bg_dark-blue text-center "><input placeholder="Неделя 3 (16.01-22.01)" type="text" class=" text-center office-input__edit color-white"></td>
+          </tr>
+          <tr class="bg_light-blue fw_600 text-center">
+            <td class="border">план (в €)</td>
+            <td class="border">факт (в €)</td>
+          </tr>
+          <tr class="border height-20">
+            <td colspan="2" class="bg_gray"></td>
+          </tr>
+          <tr class="border height-20">
+            <td colspan="2"></td>
+          </tr>
+          <tr class="">
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+          </tr>
+          <tr class="bg_light-gray height-20 border">
+            <td colspan="2"></td>
+          </tr>
+          <tr class="">
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+          </tr>
+        </table>
+        <table class="backoffice-table_5">
+          <tr>
+            <td colspan="2" class="bg_dark-blue text-center "><input placeholder="Неделя 4 (23.01-31.01)" type="text" class=" text-center office-input__edit color-white"></td>
+          </tr>
+          <tr class="bg_light-blue fw_600 text-center">
+            <td class="border">план (в €)</td>
+            <td class="border">факт (в €)</td>
+          </tr>
+          <tr class="border height-20">
+            <td colspan="2" class="bg_gray"></td>
+          </tr>
+          <tr class="border height-20">
+            <td colspan="2"></td>
+          </tr>
+          <tr class="">
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+          </tr>
+          <tr class="bg_light-gray height-20 border">
+            <td colspan="2"></td>
+          </tr>
+          <tr class="">
+            <td><input class="office-input__edit office-input " type="text"></td>
+            <td><input class="office-input__edit office-input " type="text"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="ggi-table-box">
+        <table class="ggi-table_1">
+          <tr class="fw_700 bg_light-blue text-center border-bot">
+            <td class="widht-20">1</td>
+            <td class="text-nowrap widht-175">GGI</td>
+            <td class=" widht-80"></td>
+            <td class=" widht-80"></td>
+            <td class=" widht-80"></td>
+            <td class=" widht-80 border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td><input class="ggi-input__edit office-input " type="text" placeholder="Лид 1"></td>
+            <td><input class="ggi-input__edit office-input " type="text"></td>
+            <td><input class="ggi-input__edit office-input " type="text"></td>
+            <td><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-right"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+          </tr>
+          <tr class="text-center fw_600">
+            <td class="border bg_blue"></td>
+            <td class="border bg_blue">название проекта</td>
+            <td class="border bg_blue">стоимость</td>
+            <td class="border bg_blue">выплачено</td>
+            <td class="border bg_blue">остаток</td>
+            <td class="border bg_blue">доход</td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right border-right"></td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+          </tr>
+          <tr class="bg_light-green border-bot">
+            <td>
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td><input class="ggi-input__edit office-input " type="text" placeholder="Проект 1"></td>
+            <td><input class="ggi-input__edit office-input " type="text" placeholder="100,00€"></td>
+            <td></td>
+            <td></td>
+            <td class="border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggi-input__edit office-input " type="text"></td>
+          </tr>
+          <tr class="border-bot">
+            <td class=" bg_light-green">
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td class="bg_light-red"><input class="ggi-input__edit office-input " type="text" placeholder="Художник"></td>
+            <td class="bg_light-red"><input class="ggi-input__edit office-input " type="text" placeholder="100,00€"></td>
+            <td class="bg_light-red"></td>
+            <td class="bg_light-red"></td>
+            <td class="bg_light-green border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+          </tr>
+          <tr class="bg_light-blue text-center">
+            <td></td>
+            <td>Расчет</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+          </tr>
+        </table>
+        <table class="ggi-table_2">
+          <tr>
+            <td class="widht-175 text-center bg_dark-green fw_600">план приход</td>
+            <td class="bg_light-green"></td>
+            <td class="bg_white border-none"></td>
+            <td colspan="3"><button class="ggi-button">Редактировать</button></td>
+          </tr>
+          <tr>
+            <td class="bg_dark-green text-center fw_600">факт приход</td>
+            <td class="bg_light-green"></td>
+          </tr>
+          <tr>
+            <td class="bg_dark-red text-center fw_600">план расход</td>
+            <td class="bg_light-red"></td>
+            <td>бэк офис</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="bg_dark-red text-center fw_600">факт расход</td>
+            <td class="bg_light-red"></td>
+          </tr>
+          <tr>
+            <td>Упрощенная прибыль</td>
+          </tr>
+        </table>
+      </div>
+      <div class="ggart-table-box">
+        <table class="ggart-table_1">
+          <tr class="fw_700 bg_light-blue text-center border-bot">
+            <td class="widht-20">2</td>
+            <td class="text-nowrap widht-175">GGART</td>
+            <td class=" widht-80"></td>
+            <td class=" widht-80"></td>
+            <td class=" widht-80"></td>
+            <td class=" widht-80 border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td><input class="ggart-input__edit office-input " type="text" placeholder="Лид 2"></td>
+            <td><input class="ggart-input__edit office-input " type="text"></td>
+            <td><input class="ggart-input__edit office-input " type="text"></td>
+            <td><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-right"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+          </tr>
+          <tr class="text-center fw_600">
+            <td class="border bg_blue"></td>
+            <td class="border bg_blue">название проекта</td>
+            <td class="border bg_blue">стоимость</td>
+            <td class="border bg_blue">выплачено</td>
+            <td class="border bg_blue">остаток</td>
+            <td class="border bg_blue">доход</td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+          </tr>
+          <tr class="bg_light-green border-bot">
+            <td>
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td><input class="ggart-input__edit office-input " type="text" placeholder="Проект 2"></td>
+            <td><input class="ggart-input__edit office-input " type="text" placeholder="100,00€"></td>
+            <td></td>
+            <td></td>
+            <td class="border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="ggart-input__edit office-input " type="text"></td>
+          </tr>
+          <tr class="border-bot">
+            <td class=" bg_light-green">
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td class="bg_light-red"><input class="ggart-input__edit office-input " type="text" placeholder="Художник"></td>
+            <td class="bg_light-red"><input class="ggart-input__edit office-input " type="text" placeholder="100,00€"></td>
+            <td class="bg_light-red"></td>
+            <td class="bg_light-red"></td>
+            <td class="bg_light-green border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+          </tr>
+          <tr class="bg_light-blue text-center">
+            <td></td>
+            <td>Расчет</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+          </tr>
+        </table>
+        <table class="ggart-table_2">
+          <tr>
+            <td class="widht-175 text-center bg_dark-green fw_600">план приход</td>
+            <td class="bg_light-green"></td>
+            <td class="bg_white border-none"></td>
+            <td colspan="3"><button class="ggart-button">Редактировать</button></td>
+          </tr>
+          <tr>
+            <td class="bg_dark-green text-center fw_600">факт приход</td>
+            <td class="bg_light-green"></td>
+          </tr>
+          <tr>
+            <td class="bg_dark-red text-center fw_600">план расход</td>
+            <td class="bg_light-red"></td>
+            <td>бэк офис</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="bg_dark-red text-center fw_600">факт расход</td>
+            <td class="bg_light-red"></td>
+          </tr>
+          <tr>
+            <td>Упрощенная прибыль</td>
+          </tr>
+        </table>
+      </div>
+      <div class="game-table-box">
+        <table class="ggi-table_1">
+          <tr class="fw_700 bg_light-blue text-center border-bot">
+            <td class="widht-20">3</td>
+            <td class="text-nowrap widht-175">GAME</td>
+            <td class=" widht-80"></td>
+            <td class=" widht-80"></td>
+            <td class=" widht-80"></td>
+            <td class=" widht-80 border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+            <td class="bg_white border-none"></td>
+            <td class="border border-left  widht-80">план (в €)</td>
+            <td class="border  widht-80">факт (в €)</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td><input class="game-input__edit office-input " type="text" placeholder="Лид 3"></td>
+            <td><input class="game-input__edit office-input " type="text"></td>
+            <td><input class="game-input__edit office-input " type="text"></td>
+            <td><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-right"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-none"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+          </tr>
+          <tr class="text-center fw_600">
+            <td class="border bg_blue"></td>
+            <td class="border bg_blue">название проекта</td>
+            <td class="border bg_blue">стоимость</td>
+            <td class="border bg_blue">выплачено</td>
+            <td class="border bg_blue">остаток</td>
+            <td class="border bg_blue">доход</td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+            <td class="border-none"></td>
+            <td colspan="2" class="bg_blue  border-left border-right"></td>
+          </tr>
+          <tr class="bg_light-green border-bot">
+            <td>
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td><input class="game-input__edit office-input " type="text" placeholder="Проект 3"></td>
+            <td><input class="game-input__edit office-input " type="text" placeholder="0,00€"></td>
+            <td></td>
+            <td></td>
+            <td class="border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="bg_white border-none"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+            <td class="border-red"><input class="game-input__edit office-input " type="text"></td>
+          </tr>
+          <tr class="border-bot">
+            <td class=" bg_light-green">
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td class="bg_light-red"><input class="game-input__edit office-input " type="text" placeholder="Художник"></td>
+            <td class="bg_light-red"><input class="game-input__edit office-input " type="text" placeholder="0,00€"></td>
+            <td class="bg_light-red"></td>
+            <td class="bg_light-red"></td>
+            <td class="bg_light-green border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_light-red border-red"></td>
+            <td class="bg_light-red border-red"></td>
+          </tr>
+          <tr class="bg_light-blue text-center">
+            <td></td>
+            <td>Расчет</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="border-right"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none"></td>
+            <td class="bg_white border-none _border-clear"></td>
+            <td class="bg_white border-none _border-clear"></td>
+          </tr>
+        </table>
+        <table class="game-table_2">
+          <tr>
+            <td class="widht-175 text-center bg_dark-green fw_600">план приход</td>
+            <td class="bg_light-green"></td>
+            <td class="bg_white border-none"></td>
+            <td colspan="3"><button class="game-button">Редактировать</button></td>
+          </tr>
+          <tr>
+            <td class="bg_dark-green text-center fw_600">факт приход</td>
+            <td class="bg_light-green"></td>
+          </tr>
+          <tr>
+            <td class="bg_dark-red text-center fw_600">план расход</td>
+            <td class="bg_light-red"></td>
+            <td>бэк офис</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="bg_dark-red text-center fw_600">факт расход</td>
+            <td class="bg_light-red"></td>
+          </tr>
+          <tr>
+            <td>Упрощенная прибыль</td>
+          </tr>
+        </table>
+      </div>
+      <div class="debt-table-box">
+        <table>
+          <tr class="bg_dark-green fw_700">
+            <td class="widht-20"></td>
+            <td colspan="2" class="border">Задолженность от клиентов</td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border"></td>
+            <td class="widht-80 border"></td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border"></td>
+            <td class="widht-80 border"></td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border"></td>
+            <td class="widht-80 border"></td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border"></td>
+            <td class="widht-80 border"></td>
+          </tr>
+          <tr>
+            <td class="widht-20">
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td class="border-left">
+              <input class="debt-input__edit office-input " type="text">
+            </td>
+            <td class="widht-380 border-right">
+              <input class="debt-input__edit office-input text-right" type="text">
+            </td>
+            <td class="bg_white"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="bg_white"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="bg_white"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="bg_white"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+          </tr>
+          <tr class="bg_dark-red fw_700">
+            <td class="widht-20"></td>
+            <td colspan="2" class="border">Задолженность перед поставщиками</td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border"></td>
+            <td class="widht-80 border"></td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border"></td>
+            <td class="widht-80 border"></td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border"></td>
+            <td class="widht-80 border"></td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border"></td>
+            <td class="widht-80 border"></td>
+          </tr>
+          <tr>
+            <td class="widht-20">
+              <div class="add_box">
+                <input type="checkbox" class="inp-checkbox">
+                <button class="add-btn"></button>
+                <button class="delete-btn">Удалить</button>
+              </div>
+            </td>
+            <td class="border-left">
+              <input class="debt-input__edit office-input " type="text">
+            </td>
+            <td class="widht-380 border-right">
+              <input class="debt-input__edit office-input text-right" type="text">
+            </td>
+            <td class="bg_white"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="bg_white"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="bg_white"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="bg_white"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+            <td class="border_black text-center"><input class="debt-input__edit office-input" type="text"></td>
+          </tr>
+          <tr class="bg_dark-yellow fw_700">
+            <td class="widht-20"></td>
+            <td class="border">ВСЕГО:</td>
+            <td class="border text-right">
+              <span class="debt-sum"></span>
+            </td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border text-center"> <span class="debt-sum"></span>
+            </td>
+            <td class="widht-80 border text-center"> <span class="debt-sum"></span>
+            </td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border text-center"> <span class="debt-sum"></span>
+            </td>
+            <td class="widht-80 border text-center"> <span class="debt-sum"></span>
+            </td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border text-center"> <span class="debt-sum"></span>
+            </td>
+            <td class="widht-80 border text-center"> <span class="debt-sum"></span>
+            </td>
+            <td class="bg_white"></td>
+            <td class="widht-80 border text-center"> <span class="debt-sum"></span>
+            </td>
+            <td class="widht-80 border text-center"> <span class="debt-sum"></span>
+            </td>
+          </tr>
+        </table>
+        <button class="debt-button">Редактировать</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

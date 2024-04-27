@@ -1,0 +1,672 @@
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Nunito', sans-serif;
+.header {
+    align-items: center;
+    margin-bottom: 35px;
+
+    &__logo-img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 0;
+    }
+
+    &__title {
+        h1 {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 48px;
+            color: #FFFFFF;
+            margin-bottom: 31px;
+
+            span {
+                margin-top: 30px;
+                display: flex;
+            }
+        }
+
+    }
+
+    &__text-2,
+    &__text-1 {
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+        color: #989898;
+        margin-left: 50px;
+        margin-bottom: 65px;
+
+        span {
+            color: #fff;
+        }
+
+        &::before {
+            content: url(../images/system.svg);
+            position: absolute;
+            left: -50px;
+            top: 0;
+        }
+    }
+
+    &__text-2 {
+        max-width: 250px;
+
+        &::before {
+            content: url(../images/money.svg);
+            position: absolute;
+            left: -50px;
+            top: 3px;
+        }
+    }
+}
+
+.enter {
+    position: relative;
+    background: linear-gradient(94.48deg, #B852FF 0.63%, #5578E3 100%);
+    border-radius: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 10px 69px 12px 32px;
+
+    &::after {
+        position: absolute;
+        content: url(../images/arrow-right.svg);
+        top: 50%;
+        transform: translateY(-41%);
+        right: 6px;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.graph-wrapper {
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+
+    img {
+        position: absolute;
+        top: -180px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 0;
+    }
+}
+
+.mt-290 {
+    margin-top: 290px;
+}
+
+.container-relative {
+    position: relative;
+}
+
+.hand-dollar {
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+    z-index: 2;
+}
+
+.last-month {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 240px;
+}
+
+.balance {
+    position: absolute;
+    right: 290px;
+    bottom: 80px;
+    z-index: 3;
+}
+
+.navigation {
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    align-items: center;
+    height: 54px;
+    position: relative;
+
+    ul {
+        line-height: 48px;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0;
+
+        li {
+
+            font-size: 20px;
+            font-weight: 400;
+            color: #fff;
+
+
+            a {
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 31px;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+// forwho start
+.forwho {
+    margin-bottom: 150px;
+
+    &__title-img {
+        margin-bottom: 75px;
+
+        img {
+            display: block;
+            max-width: 100%;
+            // height: 200px;
+            margin: 0 auto 0;
+        }
+    }
+
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 37px;
+        color: #FFFFFF;
+    }
+
+    &__investor {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: url(../images/investor.svg);
+            top: 0;
+            right: -140px;
+            z-index: 5;
+        }
+    }
+
+    &__crypt {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: url(../images/crypt.svg);
+            top: 0;
+            right: -140px;
+            z-index: 5;
+        }
+    }
+
+    &__income {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: url(../images/income.svg);
+            top: 0;
+            left: -140px;
+            z-index: 5;
+        }
+    }
+
+    &__newbie {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: url(../images/newbie.svg);
+            top: 0;
+            left: -140px;
+            z-index: 5;
+        }
+    }
+
+    &__income,
+    &__investor {
+        height: 150px;
+        margin-bottom: 120px;
+    }
+
+    &__img-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__learn_more {
+        width: 234px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+
+    &__img {
+        &-ellipse {
+            position: absolute;
+            right: 30px;
+            top: 0;
+            z-index: 2;
+        }
+    }
+}
+
+
+
+
+// product start
+.product {
+    position: relative;
+    margin-bottom: 110px;
+
+    &__title-img {
+        margin-bottom: 50px;
+
+        img {
+
+            display: block;
+            max-width: 100%;
+            margin: 0 auto 0;
+        }
+    }
+
+    &__card-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        height: 90%;
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 51px;
+        line-height: 63px;
+        color: #FFFFFF;
+
+        span {
+            font-weight: 700;
+        }
+
+    }
+
+    &__learn_more {
+        padding-right: 85px;
+        padding-bottom: 8px;
+        font-size: 26px;
+        line-height: 36px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+// arbitrage start
+.arbitrage {
+    margin-bottom: 95px;
+
+    &__title-img {
+        margin-bottom: 60px;
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto 0;
+        }
+    }
+
+    &__img {
+        img {
+            float: right;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+
+        span {
+            display: block;
+            margin-bottom: 40px;
+        }
+
+    }
+
+    &__learn_more {
+        font-size: 26px;
+        line-height: 36px;
+        padding-right: 85px;
+        padding-bottom: 7px;
+    }
+}
+
+// work start
+.offset-1.col-2 {
+    margin-left: 2.333333%;
+}
+
+.work {
+    margin-bottom: 130px;
+
+    &__title-img {
+        margin-bottom: 90px;
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto 0;
+        }
+    }
+
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FFFFFF;
+        max-width: 930px;
+        margin-bottom: 120px;
+
+        span {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            padding: 0;
+        }
+    }
+
+    &__img-num {
+        margin-top: -10px;
+    }
+
+    &__img-reg {
+        height: 580px;
+        position: relative;
+
+        img {
+            width: 249px;
+        }
+    }
+
+    &__reg {
+        position: absolute;
+        bottom: 0;
+        left: 13px;
+        max-width: 226px;
+    }
+
+    &__img-line {
+        position: relative;
+    }
+
+    &__line {
+        position: absolute;
+        top: 0px;
+        left: 22px;
+        z-index: -1;
+        max-height: 2150px;
+    }
+
+
+
+    &__rules {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FFFFFF;
+        padding: 14px 32px 17px 39px;
+        border: 2px solid #FFFFFF;
+        border-radius: 30px;
+        max-width: 880px;
+    }
+
+    &__learn_more {
+        font-size: 26px;
+        line-height: 36px;
+        padding: 13px 90px 13px 40px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__learn_more-box {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.mb70 {
+    margin-bottom: 70px;
+}
+
+// faq start
+
+.faq {
+    margin-bottom: 75px;
+
+    &__arrow-top {
+        display: none;
+    }
+
+    &__title-img {
+        margin-bottom: 90px;
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto 0;
+        }
+    }
+
+    details[open] {
+        position: relative;
+        overflow: hidden;
+
+        .faq__arrow-top {
+            display: block;
+        }
+
+        img {
+            display: none;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 11px;
+            background: linear-gradient(270deg, #B454FE 0%, #5B77E5 100%);
+        }
+
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 77px 35px 50px;
+        margin: 0 auto 40px;
+        max-width: 1152px;
+        background: #fff;
+        box-shadow: 0px 0px 15px rgba(0, 8, 23, 0.08);
+        border-radius: 13px;
+
+    }
+
+    &__qestion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #222220;
+    }
+
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30px;
+        color: #757575;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+// footer start
+.footer {
+    max-width: 1240px;
+    padding: 23px;
+    margin: 0 auto;
+    background: #000000;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+
+    }
+
+    &__col-1,
+    &__col-2,
+    &__col-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buttons {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            margin-top: 15px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__nav {
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__contacts {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+
+        a {
+            display: block;
+            color: #FFFFFF;
+            margin-bottom: 6px;
+        }
+
+    }
+
+    &__agreement {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        a {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__back-top {
+
+        img {
+            transform: translateY(50%);
+        }
+    }
+
+    &__reg {
+
+        a {
+            display: block;
+            // transform: translate(25%, 50%);
+            max-width: 270px;
+
+        }
+    }
+
+    &__enter {
+        a {
+            // transform: translate(-75%, 50%);
+            display: block;
+            max-width: 150px;
+        }
+    }
+}

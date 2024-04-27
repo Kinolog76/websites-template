@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Готелі</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap&_v=20230728130228" rel="stylesheet" />
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js?_v=20230728130228"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js?_v=20230728130228"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js?_v=20230728130228"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css?_v=20230728130228" />
+	<script src="https://unpkg.com/mappa-mundi@1.6.5?_v=20230728130228"></script>
+	<!-- Подключение библиотеки Moment.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js?_v=20230728130228"></script>
+
+	<!-- Подключение локализации Moment.js для украинского языка -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/uk.js?_v=20230728130228"></script>
+
+	<!-- Подключение библиотеки Date Range Picker -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css?_v=20230728130228" />
+	<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js?_v=20230728130228"></script>
+	<!-- Подключение библиотеки owl slider -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css?_v=20230728130228">
+	<link rel="stylesheet" href="css/hotels-style.css" />
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="main">
+			<div class="main__container">
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Головна</a></li>
+					<li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Якась сторінка</a></li>
+					<li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Ще якась сторінка</a></li>
+					<li class="breadcrumbs-item"><a class="breadcrumbs-link active" href="">Лумшори</a></li>
+				</ul>
+				<div class="found-hotels">
+					<span class="found-hotels__location">Лумшори</span>: знайдено <span class="found-hotels__amount">287</span> варіантів
+				</div>
+				<div class="content__wrapper">
+					<div class="main__filter filter">
+						<button type="" class="filter__btn-back _768_db">
+							<img src="img/icons/back-ellipse.svg" alt="" />
+						</button>
+						<div class="filter__title-top _768_df">Фільтри</div>
+						<form class="form__filter" action="">
+							<div class="filter__rent rent-filter">
+								<div class="rent-filter__title">Пошук оренди</div>
+								<div class="rent-filter__place">
+									<div class="place__title filter__title">
+										Місце призначення
+									</div>
+									<div class="place__wrapper">
+										<select class="select inp-filter__place _rent-filter__input" id="placeChoice" name="placeChoice">
+											<option data-value="https://dev.go-to.rest/kosino/?lang=uk" value="Колочава">Колочава</option>
+											<option value="Косино - термальні води">
+												Косино - термальні води
+											</option>
+											<option disabled value="Лумшори">Лумшори</option>
+											<option value="Міжгір’я">Міжгір’я</option>
+											<option value="Колочава">Колочава</option>
+											<option value="Косино - термальні води">
+												Косино - термальні води
+											</option>
+											<option value="Лумшори">Лумшори</option>
+											<option value="Міжгір’я">Міжгір’я</option>
+										</select>
+									</div>
+								</div>
+								<div class="dates-box">
+									<div class="rent-filter__arrival">
+										<div class="arrival__title filter__title">Прибуття</div>
+										<div class="arrival__wrapper">
+											<input type="text" name="arrival" id="airdatepicker" autocomplete="off" class="inp-filter__arrival _rent-filter__input" />
+										</div>
+									</div>
+									<div class="rent-filter__departure">
+										<div class="departure__title filter__title">Виїзд</div>
+										<div class="departure__wrapper">
+											<input type="text" name="departure" class="inp-filter__departure _rent-filter__input" />
+										</div>
+									</div>
+								</div>
+								<div class="rent-filter__guests">
+									<div class="guests__title filter__title">Гості</div>
+									<div class="guests__wrapper" id="guestsWrapper">
+										<span class="guests-adult">1 Дорослий </span>
+										-
+										<span class="guests-child">Без дітей</span>
+									</div>
+
+									<div class="counter__window" id="counterWrapper">
+										<div class="counter__adult">
+											<div class="adult__text">
+												<p class="adult__text-title">Дорослі</p>
+												<p class="adult__text-subtitle">Від 18 років</p>
+											</div>
+											<div class="adult-btn__box">
+												<button id="decrementAdult" disabled>
+													<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<circle cx="15" cy="15" r="15" fill="#DD6A24" />
+														<path d="M9.16797 15H20.8346" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+												<input id="countAdult" type="text" min="1" data-max="20" value="1" readonly />
+												<button id="incrementAdult">
+													<img src="img/icons/counter_plus.svg" alt="" />
+												</button>
+											</div>
+										</div>
+										<div class="counter__child">
+											<div class="child__text">
+												<p class="child__text-title">Діти</p>
+												<p class="child__text-subtitle">0-17 років</p>
+											</div>
+											<div class="child-btn__box">
+												<button id="decrementChild" disabled>
+													<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<circle cx="15" cy="15" r="15" fill="#DD6A24" />
+														<path d="M9.16797 15H20.8346" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+												<input id="countChild" type="text" min="0" data-max="20" value="0" readonly />
+												<button id="incrementChild">
+													<img src="img/icons/counter_plus.svg" alt="" />
+												</button>
+											</div>
+										</div>
+										<div class="close-button__wrapper">
+											<button class="counter__close-button" id="counterCloseButton">
+												Закрити
+											</button>
+										</div>
+									</div>
+								</div>
+								<button class="rent-filter__add_btn">Додатково</button>
+								<div class="rent-filter__price-range">
+									<div class="departure__title filter__title">Ціна</div>
+									<div class="price-range__wrapper">
+										<input type="text" class="price-range__from" value="0" min="0" max="120000" />
+										-
+										<input type="text" class="price-range__to" value="50000" min="0" max="120000" />
+									</div>
+								</div>
+								<span class="show-more__wrapper">
+									<div class="check-item check-item__show">
+										<input type="checkbox" id="wifi" />
+										<label for="wifi">Wi-Fi Інтернет</label>
+									</div>
+									<div class="check-item check-item__show">
+										<input type="checkbox" id="kitchen" />
+										<label for="kitchen">Кухня</label>
+									</div>
+									<div class="check-item check-item__show">
+										<input type="checkbox" id="basin" />
+										<label for="basin">Басейн</label>
+									</div>
+									<div class="check-item check-item__show">
+										<input type="checkbox" id="parking" />
+										<label for="parking">Парковка</label>
+									</div>
+									<div class="check-item check-item__show">
+										<input type="checkbox" id="text_1" />
+										<label for="text_1">text_1</label>
+									</div>
+									<div class="check-item check-item__show">
+										<input type="checkbox" id="text_2" />
+										<label for="text_2">text_2</label>
+									</div>
+									<a class="show-more_text" href=""></a>
+								</span>
+								<button data-ripple class="rent-filter__find_btn btn_orange">
+									Шукати
+								</button>
+							</div>
+							<a href="" data-popup="#mapPopup" class="filter__map_box">
+								<img src="img/filter_map.jpg" alt="" />
+							</a>
+							<div class="bot__filter filter-bot">
+								<div class="filter-bot__box">
+									<div data-open="true" class="filter-bot__title">
+										<h5>Ціна</h5>
+										<img class="filter-arrow" src="img/icons/bot-filter__arrow.svg" alt="" />
+									</div>
+									<div class="price-range__wrapper">
+										<input type="text" class="price-range__from" value="0" min="0" max="120000" />
+										-
+										<input type="text" class="price-range__to" value="50000" min="0" max="120000" />
+									</div>
+								</div>
+
+								<div class="filter-bot__box">
+									<div data-open="true" class="filter-bot__title">
+										<h5>Площа</h5>
+										<img class="filter-arrow" src="img/icons/bot-filter__arrow.svg" alt="" />
+									</div>
+									<ul class="filter-content__wrapper">
+										<li class="check-item">
+											<input type="checkbox" id="10m" />
+											<label for="10m">10+ m²</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="20m" />
+											<label for="20m">20+ m²</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="30m" />
+											<label for="30m">30+ m²</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="40m" />
+											<label for="40m">40+ m²</label>
+										</li>
+									</ul>
+								</div>
+
+								<div class="filter-bot__box">
+									<div data-open="true" class="filter-bot__title">
+										<h5>Кількість людей</h5>
+										<img class="filter-arrow" src="img/icons/bot-filter__arrow.svg" alt="" />
+									</div>
+									<ul class="filter-content__wrapper">
+										<li class="check-item">
+											<input type="checkbox" id="amountPeople1" />
+											<label for="amountPeople1">1</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="amountPeople2" />
+											<label for="amountPeople2">2</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="amountPeople3" />
+											<label for="amountPeople3">3</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="amountPeople4" />
+											<label for="amountPeople4">4</label>
+										</li>
+									</ul>
+								</div>
+								<div class="filter-bot__box">
+									<div data-open="true" class="filter-bot__title">
+										<h5>Кількість ліжок</h5>
+										<img class="filter-arrow" src="img/icons/bot-filter__arrow.svg" alt="" />
+									</div>
+									<ul class="filter-content__wrapper">
+										<li class="check-item">
+											<input type="checkbox" id="amountBed1" />
+											<label for="amountBed1">1</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="amountBed2" />
+											<label for="amountBed2">2</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="amountBed3" />
+											<label for="amountBed3">3</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="amountBed4" />
+											<label for="amountBed3">4</label>
+										</li>
+									</ul>
+								</div>
+								<div class="filter-bot__box">
+									<div data-open="true" class="filter-bot__title">
+										<h5>Кількість ванних кімнат</h5>
+										<img class="filter-arrow" src="img/icons/bot-filter__arrow.svg" alt="" />
+									</div>
+									<ul class="filter-content__wrapper">
+										<li class="check-item">
+											<input type="checkbox" id="amountbathrooms1" />
+											<label for="amountbathrooms1">1</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="amountbathrooms2" />
+											<label for="amountbathrooms2">2</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="amountbathrooms3" />
+											<label for="amountbathrooms3">3</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="amountbathrooms4" />
+											<label for="amountbathrooms4">4</label>
+										</li>
+									</ul>
+								</div>
+								<div class="filter-bot__box">
+									<div data-open="true" class="filter-bot__title">
+										<h5>Зручності</h5>
+										<img class="filter-arrow" src="img/icons/bot-filter__arrow.svg" alt="" />
+									</div>
+									<div class="filter-content__wrapper">
+										<div class="check-item check-item__show-bot">
+											<input type="checkbox" id="wifi" />
+											<label for="wifi">Wi-Fi Інтернет</label>
+										</div>
+										<div class="check-item check-item__show-bot">
+											<input type="checkbox" id="kitchen" />
+											<label for="kitchen">Кухня</label>
+										</div>
+										<div class="check-item check-item__show-bot">
+											<input type="checkbox" id="basin" />
+											<label for="basin">Басейн</label>
+										</div>
+										<div class="check-item check-item__show-bot">
+											<input type="checkbox" id="parking" />
+											<label for="parking">Парковка</label>
+										</div>
+										<div class="check-item check-item__show-bot">
+											<input type="checkbox" id="text_1" />
+											<label for="text_1">text_1</label>
+										</div>
+										<div class="check-item check-item__show-bot">
+											<input type="checkbox" id="text_2" />
+											<label for="text_2">text_2</label>
+										</div>
+										<a class="show-more_text-bot" href=""></a>
+									</div>
+								</div>
+								<div class="filter-bot__box">
+									<div data-open="true" class="filter-bot__title">
+										<h5>Назначення</h5>
+										<img class="filter-arrow" src="img/icons/bot-filter__arrow.svg" alt="" />
+									</div>
+									<ul class="filter-content__wrapper">
+										<li class="check-item">
+											<input type="checkbox" id="forClidrens" />
+											<label for="forClidrens">Для дітей</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="withAnimals" />
+											<label for="withAnimals">Дозволено з тваринами</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="smoking" />
+											<label for="smoking">Кімната для куріння</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="notSmoking" />
+											<label for="notSmoking">Курити заборонено</label>
+										</li>
+									</ul>
+								</div>
+								<div class="filter-bot__box">
+									<div data-open="false" class="filter-bot__title">
+										<h5>Назва фільтру</h5>
+										<img class="filter-arrow" src="img/icons/bot-filter__arrow.svg" alt="" />
+									</div>
+									<ul class="filter-content__wrapper">
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-1</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-2</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-3</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-4</label>
+										</li>
+									</ul>
+								</div>
+								<div class="filter-bot__box">
+									<div data-open="false" class="filter-bot__title">
+										<h5>Назва фільтру</h5>
+										<img class="filter-arrow" src="img/icons/bot-filter__arrow.svg" alt="" />
+									</div>
+									<ul class="filter-content__wrapper">
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-1</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-2</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-3</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-4</label>
+										</li>
+									</ul>
+								</div>
+								<div class="filter-bot__box">
+									<div data-open="false" class="filter-bot__title">
+										<h5>Назва фільтру</h5>
+										<img class="filter-arrow" src="img/icons/bot-filter__arrow.svg" alt="" />
+									</div>
+									<ul class="filter-content__wrapper">
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-1</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-2</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-3</label>
+										</li>
+										<li class="check-item">
+											<input type="checkbox" id="" />
+											<label for="">test-4</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter__bottom _768_db">
+								<span class="_480_db filter__bottom-find">Знайдено
+									<span class="filter__btn-results-amount">174</span>
+									варіанти</span>
+								<div class="filter__bottom-buttons">
+									<button id="cancelFilterBtn" type="" class="filter__btn-clear">
+										Скасувати всі фільтри
+									</button>
+									<button id="showFilterBtn" type="" data-ripple data-close class="filter__btn-results btn_orange">
+										Показати
+										<span class="filter__btn-results-amount">174</span> варіанти
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="main__items">
+						<div class="services__filter filter-services">
+							<a href="" data-popup="#filterServicesPopup" class="filter-services__showmore filter-services__popup">Показати більше</a>
+							<ul class="filter-services__wrapper">
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Є Wi-Fi</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">З кухнею</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">З басейном</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">З кондиціонером</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">З парковкою</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Зі сніданком</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 1</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 2</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 3</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 4</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 5</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 6</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 7</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 8</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 9</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 10</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 11</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 12</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 13</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 14</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 15</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 16</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 17</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 18</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 19</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 20</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 21</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 22</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 23</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 24</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 25</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 26</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 27</a>
+								</li>
+								<li class="services-item">
+									<a href="" class="cl-custom-check-label">Тег 28</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sort__filter filter-sort">
+							<div class="btns_tablet">
+								<button class="filter-btn_tablet">Фільтри</button>
+								<a data-popup="#filterServicesPopup" href="" type="" class="services-btn_tablet">Послуги</a>
+							</div>
+
+							<div class="filter-sort__right-side">
+								<div class="custom-select">
+									<div class="select-selected">Від дешевих</div>
+									<div class="select-options">
+										<div class="select-option" data-value="lowToHigh">
+											Від дешевих
+										</div>
+										<div class="select-option" data-value="highToLow">
+											Від дорогих
+										</div>
+									</div>
+								</div>
+
+								<div class="sort-items">
+									<button class="sort-items__list">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.45 0.746094H10.05C9.05589 0.746094 8.25 1.55198 8.25 2.54609V3.44609C8.25 4.44021 9.05589 5.24609 10.05 5.24609H21.45C22.4441 5.24609 23.25 4.44021 23.25 3.44609V2.54609C23.25 1.55198 22.4441 0.746094 21.45 0.746094Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M21.45 9.74609H10.05C9.05589 9.74609 8.25 10.552 8.25 11.5461V12.4461C8.25 13.4402 9.05589 14.2461 10.05 14.2461H21.45C22.4441 14.2461 23.25 13.4402 23.25 12.4461V11.5461C23.25 10.552 22.4441 9.74609 21.45 9.74609Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M21.45 18.7461H10.05C9.05589 18.7461 8.25 19.552 8.25 20.5461V21.4461C8.25 22.4402 9.05589 23.2461 10.05 23.2461H21.45C22.4441 23.2461 23.25 22.4402 23.25 21.4461V20.5461C23.25 19.552 22.4441 18.7461 21.45 18.7461Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M3.45 0.746094H2.55C1.55589 0.746094 0.75 1.55198 0.75 2.54609V3.44609C0.75 4.44021 1.55589 5.24609 2.55 5.24609H3.45C4.44411 5.24609 5.25 4.44021 5.25 3.44609V2.54609C5.25 1.55198 4.44411 0.746094 3.45 0.746094Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M3.45 9.74609H2.55C1.55589 9.74609 0.75 10.552 0.75 11.5461V12.4461C0.75 13.4402 1.55589 14.2461 2.55 14.2461H3.45C4.44411 14.2461 5.25 13.4402 5.25 12.4461V11.5461C5.25 10.552 4.44411 9.74609 3.45 9.74609Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M3.45 18.7461H2.55C1.55589 18.7461 0.75 19.552 0.75 20.5461V21.4461C0.75 22.4402 1.55589 23.2461 2.55 23.2461H3.45C4.44411 23.2461 5.25 22.4402 5.25 21.4461V20.5461C5.25 19.552 4.44411 18.7461 3.45 18.7461Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<button class="sort-items__tile sort-active">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.45 0.746094H2.55C1.55589 0.746094 0.75 1.55198 0.75 2.54609V3.44609C0.75 4.44021 1.55589 5.24609 2.55 5.24609H3.45C4.44411 5.24609 5.25 4.44021 5.25 3.44609V2.54609C5.25 1.55198 4.44411 0.746094 3.45 0.746094Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.45 0.746094H11.55C10.5559 0.746094 9.75 1.55198 9.75 2.54609V3.44609C9.75 4.44021 10.5559 5.24609 11.55 5.24609H12.45C13.4441 5.24609 14.25 4.44021 14.25 3.44609V2.54609C14.25 1.55198 13.4441 0.746094 12.45 0.746094Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M21.45 0.746094H20.55C19.5559 0.746094 18.75 1.55198 18.75 2.54609V3.44609C18.75 4.44021 19.5559 5.24609 20.55 5.24609H21.45C22.4441 5.24609 23.25 4.44021 23.25 3.44609V2.54609C23.25 1.55198 22.4441 0.746094 21.45 0.746094Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M3.45 9.74609H2.55C1.55589 9.74609 0.75 10.552 0.75 11.5461V12.4461C0.75 13.4402 1.55589 14.2461 2.55 14.2461H3.45C4.44411 14.2461 5.25 13.4402 5.25 12.4461V11.5461C5.25 10.552 4.44411 9.74609 3.45 9.74609Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.45 9.74609H11.55C10.5559 9.74609 9.75 10.552 9.75 11.5461V12.4461C9.75 13.4402 10.5559 14.2461 11.55 14.2461H12.45C13.4441 14.2461 14.25 13.4402 14.25 12.4461V11.5461C14.25 10.552 13.4441 9.74609 12.45 9.74609Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M21.45 9.74609H20.55C19.5559 9.74609 18.75 10.552 18.75 11.5461V12.4461C18.75 13.4402 19.5559 14.2461 20.55 14.2461H21.45C22.4441 14.2461 23.25 13.4402 23.25 12.4461V11.5461C23.25 10.552 22.4441 9.74609 21.45 9.74609Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M3.45 18.7461H2.55C1.55589 18.7461 0.75 19.552 0.75 20.5461V21.4461C0.75 22.4402 1.55589 23.2461 2.55 23.2461H3.45C4.44411 23.2461 5.25 22.4402 5.25 21.4461V20.5461C5.25 19.552 4.44411 18.7461 3.45 18.7461Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.45 18.7461H11.55C10.5559 18.7461 9.75 19.552 9.75 20.5461V21.4461C9.75 22.4402 10.5559 23.2461 11.55 23.2461H12.45C13.4441 23.2461 14.25 22.4402 14.25 21.4461V20.5461C14.25 19.552 13.4441 18.7461 12.45 18.7461Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M21.45 18.7461H20.55C19.5559 18.7461 18.75 19.552 18.75 20.5461V21.4461C18.75 22.4402 19.5559 23.2461 20.55 23.2461H21.45C22.4441 23.2461 23.25 22.4402 23.25 21.4461V20.5461C23.25 19.552 22.4441 18.7461 21.45 18.7461Z" stroke="#A0A9B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="owl-carousel">
+              <div class="item">
+                <img src="slide1.jpg" alt="Slide 1">
+              </div>
+              <div class="item">
+                <img src="slide2.jpg" alt="Slide 2">
+              </div>
+              <div class="item">
+                <img src="slide3.jpg" alt="Slide 3">
+              </div>
+            </div>
+             -->
+						<div class="cards__wrapper">
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_1.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Еко-садиба «Васкул»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_2.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Гостинний двір «Лісова казка в горах»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4YLe3D_HN8E7maI-H1Tg6AFXb5EtluLlb3wA6fC7iKA&s" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4YLe3D_HN8E7maI-H1Tg6AFXb5EtluLlb3wA6fC7iKA&s" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4YLe3D_HN8E7maI-H1Tg6AFXb5EtluLlb3wA6fC7iKA&s" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4YLe3D_HN8E7maI-H1Tg6AFXb5EtluLlb3wA6fC7iKA&s" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Готель «Mineral»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_4.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Еко-садиба «Васкул»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_5.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_5.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_5.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_5.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_5.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Гостинний двір «Лісова казка в горах»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_6.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_6.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_6.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_6.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_6.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Готель «Mineral»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_7.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_7.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_7.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_7.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_7.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Еко-садиба «Васкул»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_8.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_8.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_8.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_8.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_8.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Гостинний двір «Лісова казка в горах»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_9.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_9.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_9.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_9.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_9.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Готель «Mineral»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_10.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_10.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_10.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Еко-садиба «Васкул»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_11.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_11.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_11.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_11.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_11.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_11.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_11.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_11.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Гостинний двір «Лісова казка в горах»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_12.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_12.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_12.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_12.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_12.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_12.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_12.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Готель «Mineral»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_13.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_13.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_13.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_13.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_13.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Еко-садиба «Васкул»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_14.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_14.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_14.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_14.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_14.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Гостинний двір «Лісова казка в горах»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_15.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_15.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_15.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_15.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_15.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Готель «Mineral»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_16.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_16.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_16.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_16.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_16.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Еко-садиба «Васкул»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_17.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_17.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_17.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_17.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_17.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Гостинний двір «Лісова казка в горах»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__inner">
+								<div class="card-box card">
+									<div class=" owl-carousel owl-theme card__picture">
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_18.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_18.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_18.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_18.jpg" alt="">
+										</div>
+										<div class="item">
+											<img class="owl-lazy" data-src="img/card_18.jpg" alt="">
+										</div>
+									</div>
+									<div class="card__descr">
+										<a href="" class="card__title">Готель «Mineral»</a>
+										<div class="card__location">с. Лумшори, вул. Лугова, 5, Закарпатська область</div>
+										<div class="card__text">Добре місце для дешевого сімейного відпочинку. Багато кімнат, з душем та туалетом. Загальна кухня, три з холодильником, електричною плитою, мікрохвильовою піччю та пральною машиною. На території є парковка на 6-8 автомобілів. Також у розпорядженні гостей 3 альтанки, барбекю...</div>
+										<div class="card__tell">
+											<span class="card__tell_visible">+380... <img src="img/icons/card_tell-hide.svg" alt=""></span>
+											<a href="tel:+38099999999" class="card__tell_hidden">+38099999999</a>
+										</div>
+										<div class="card__price"><span>Від <span class="card__price_bold">1070 ₴</span> / ніч </span><a class="card__link" href="">Відкрити</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pages">
+							<button type="" class="pages_btn btn_orange">Показати ще</button>
+							<div class="pages__nav nav-pages">
+								<button type="" class="nav-pages__back _last nav-pages__arrow">
+									<img class="back_anabled" src="img/icons/pages__arrow_anabled.svg" alt="" /><img class="back_disable" src="img/icons/pages__arrow_disable.svg" alt="" />
+								</button>
+								<button type="" class="nav-pages__btn nav-pages__btn-active">
+									1
+								</button>
+								<button type="" class="nav-pages__btn">2</button>
+								<button type="" class="nav-pages__btn">3</button>
+								<button type="" class="nav-pages__btn">4</button>
+								<button type="" class="nav-pages__btn">5</button>
+								<button type="" class="nav-pages__btn">6</button>
+								<button type="" class="nav-pages__btn">7</button>
+								<button type="" class="nav-pages__btn">8</button>
+								<span class="nav-pages__btn nav-pages__btn_disable">...</span>
+								<button type="" class="nav-pages__btn">39</button>
+								<button type="" class="nav-pages__next nav-pages__arrow">
+									<img class="next_anabled" src="img/icons/pages__arrow_anabled.svg" alt="" /><img class="next_disable" src="img/icons/pages__arrow_disable.svg" alt="" />
+								</button>
+							</div>
+						</div>
+						<div class="location__descr descr-location">
+							<div class="descr-location__title"> <span class="found-hotels__location">Лумшори</span>: відомості про готелі</div>
+							<ul class="descr-location__item">
+								<li class="location__item"><span class="location__item_question">Розміщення</span><span class="location__item_answer">1,885 помешкань</span></li>
+								<li class="location__item"><span class="location__item_question">Популярний готель</span><span class="location__item_answer">Hotel</span></li>
+								<li class="location__item"><span class="location__item_question">Популярний район</span><span class="location__item_answer">Район</span></li>
+								<li class="location__item"><span class="location__item_question">Тарифи за ніч</span><span class="location__item_answer">Від 200 ₴</span></li>
+								<li class="location__item"><span class="location__item_question">Аеропорт</span><span class="location__item_answer">Аеропорт</span></li>
+							</ul>
+						</div>
+						<div class="popular-question">
+							<div class="popular-question__title">Поширені запитання</div>
+							<div class="popular-question__box">
+								<div class="popular-question__question">
+									Яка середня ціна готелю?
+									<img class="popular-question__img" src="img/icons/questions_arrow-bottom.svg" alt="" />
+								</div>
+								<div class="popular-question__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur</p>
+								</div>
+							</div>
+							<div class="popular-question__box">
+								<div class="popular-question__question">
+									Чому варто обрати Go To Rest? <img class="popular-question__img" src="img/icons/questions_arrow-bottom.svg" alt="" />
+								</div>
+								<div class="popular-question__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur</p>
+								</div>
+							</div>
+							<div class="popular-question__box">
+								<div class="popular-question__question">
+									Яка середня ціна готелю?
+									<img class="popular-question__img" src="img/icons/questions_arrow-bottom.svg" alt="" />
+								</div>
+								<div class="popular-question__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur</p>
+								</div>
+							</div>
+							<div class="popular-question__box">
+								<div class="popular-question__question">
+									Чому варто обрати Go To Rest? <img class="popular-question__img" src="img/icons/questions_arrow-bottom.svg" alt="" />
+								</div>
+								<div class="popular-question__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur</p>
+								</div>
+							</div>
+							<div class="popular-question__box">
+								<div class="popular-question__question">
+									Яка середня ціна готелю?
+									<img class="popular-question__img" src="img/icons/questions_arrow-bottom.svg" alt="" />
+								</div>
+								<div class="popular-question__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="filterServicesPopup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__close"><img data-close class="_768_dn" src="img/icons/popup_close.svg" alt="">
+					<img data-close class="_768_db" src="img/icons/back-ellipse.svg" alt="">
+				</div>
+				<div class="popup__title"><span>Послуги</span> (Можна вибрати будь-яку кількість)</div>
+				<ul class="filter-services__wrapper_popup">
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Є Wi-Fi</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">З кухнею</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">З басейном</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">З кондиціонером</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">З парковкою</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Зі сніданком</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 1</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 2</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 3</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 4</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 5</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 6</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 7</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 8</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 9</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 10</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 11</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 12</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 13</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 14</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 15</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 16</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 17</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 18</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 19</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 20</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 21</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 22</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 23</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 24</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 25</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 26</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 27</a>
+					</li>
+					<li class="services-item">
+						<a href="" class="cl-custom-check-label">Тег 28</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<div id="mapPopup" aria-hidden="true" class="popup_map">
+		<div class="popup__wrapper_map">
+			<div class="popup__content_map">
+				<div class="popup__close"><img data-close class="_768_dn" src="img/icons/popup_close.svg" alt="">
+					<img data-close class="_768_db" src="img/icons/back-ellipse.svg" alt="">
+				</div>
+				<div class="popup__title_map"><span>Карта</span></div>
+				<button type="" class=""></button>
+			</div>
+		</div>
+	</div>
+	<script src="js/hotels-app.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js?_v=20230728130228"></script>
+
+</body>
+
+</html>

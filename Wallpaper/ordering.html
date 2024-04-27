@@ -1,0 +1,2736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Оформление заказа</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;600;800&family=Nunito+Sans:wght@300;400;600;700;800&family=Roboto:wght@400;500&display=swap&_v=20230723210641" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed?_v=20230723210641" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/handvetica-neue?_v=20230723210641" rel="stylesheet">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js?_v=20230622143914"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230723210641">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="mobileOverlay"></div>
+	<div class="sidebar">
+		<div class="sidebar__wrapper">
+			<div class="sidebar__header">
+				<div class="sidebar__iconBox">
+					<img src="img/logo.png" alt="">
+					<img class="sidebar__exit" src="img/Group 2562.png" alt="">
+				</div>
+				<div class="sidebar__catalog">
+					<img src="img/catalog_mobile.png" alt="">
+				</div>
+			</div>
+			<!-- ---------- -->
+			<hr>
+			<!-- ---------- -->
+			<div class="sidebar__trio">
+				<div class="sidebar__trioElement">
+					<img class="sidebar__trioIcon" src="img/heart.svg" alt="">
+					<a href="">Сравнить товары</a>
+				</div>
+				<div class="sidebar__trioElement">
+					<img class="sidebar__trioIcon" src="img/heart-icon.svg" alt="">
+					<a href="">Избранное</a>
+				</div>
+				<a href="" class="sidebar__trioElement">
+					<div class="sidebar__trioIcon sidebar__basket">
+						<img src="img/shopping-cart 1.svg" alt="">
+						<span class="sidebar__counter">3</span>
+					</div>
+					<p>Корзина</p>
+				</a>
+			</div>
+			<!-- ---------- -->
+			<hr>
+			<!-- ---------- -->
+			<div class="sidebar__description">
+				<div class="sidebar__contact">
+					<div class="sidebar__phones">
+						<div class="sidebar__phone">
+							<img src="img/Mask group.svg" alt="">
+							<a href="">+38(095) 453-22-80</a>
+						</div>
+						<div class="sidebar__phone">
+							<img src="img/vodafone-1324440251639049264 1.svg" alt="">
+							<a href="">+38(063) 323-90-34</aф>
+						</div>
+						<div class="sidebar__phone">
+							<img src="img/Mask group2.svg" alt="">
+							<a href="">+38(095) 453-22-80</a>
+						</div>
+					</div>
+					<div class="sidebar__socials">
+						<a href=""><img src="img/Group 3677795.svg" alt=""></a>
+						<a href=""><img src="img/Group 3677796.svg" alt=""></a>
+						<a href=""><img src="img/Group 3677797.svg" alt=""></a>
+					</div>
+				</div>
+				<div class="sidebar__address">
+					<img src="img/Pin.svg" alt="">
+					<p>02148, Украина, г. Киев, ул. Академика Туполева, д. 54 </p>
+				</div>
+				<div class="sidebar__time">
+					<img src="img/Calendar.svg" alt="">
+					<p>Пн-Пт: 9:00-19:00 <br>Сб: 10:00-16:00 </p>
+				</div>
+			</div>
+			<!-- ---------- -->
+			<hr>
+			<!-- ---------- -->
+			<div class="sidebar__links">
+				<a href="">Доставка товара</a>
+				<a href="">Оплата товара</a>
+				<a href="">Возврат товара</a>
+				<a href="">Вопрос-ответ</a>
+				<a href="">Контакты</a>
+				<a href="">Наш Шоу-Рум</a>
+				<a href="">Карта сайта</a>
+				<a href="">Блог</a>
+			</div>
+			<!-- ---------- -->
+			<hr>
+			<!-- ---------- -->
+			<div class="sidebar__footer">
+				<div class="sidebar__socials2">
+					<a href=""><img src="img/Group 3675729.svg" alt=""></a>
+					<a href=""><img src="img/Group 3675730.svg" alt=""></a>
+					<a href=""><img src="img/Group 3675731.svg" alt=""></a>
+				</div>
+				<div class="sidebar__options">
+					<div class="sidebar__login">
+						<a href="">Войти в личный кабинет</a>
+						<a href="">Регистрация</a>
+					</div>
+					<div class="select_lang">
+						<span class="rus">рус</span>/<span class="ukr">укр</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="conteiner__big">
+				<div class="header__inner">
+					<div class="header__ticker">
+						<div class="header_conteiner">
+							<div class="header__ticker-inner" id="content">
+								<p class="header__ticker-text">Рекламное уведомление</p>
+								<a class="header__ticker-btn" href="#" id="off">x Закрыть</a>
+							</div>
+						</div>
+					</div>
+					<div class="header__top">
+						<div class="header_conteiner">
+							<div class="header__top-inner">
+								<a class="header__top-link" href="#">г. Киев, ул. Туполева, 54</a>
+								<a class="header__top-link header__showRoom" href="#">Наш Шоу-Рум</a>
+								<div class="header__select-wrap">
+									<img class="header__select-icon" src="img/star-icon.svg">
+									<select class="header__select">
+										<option class="header__select-option">+38(095) 453-22-80</option>
+										<option class="header__select-option">+38(095) 453-22-80</option>
+									</select>
+								</div>
+
+								<a class="header__top-link" href="#">+38(063) 323-90-34</a>
+								<a class="header__top-link" href="#">+38(095) 453-22-80</a>
+								<div class="header__social-wrap">
+									<a class="header__social-link" href="#"><img class="header__social-icon" src="img/phone-icon.svg"></a>
+									<a class="header__social-link" href="#"><img class="header__social-icon" src="img/tg-icon.svg"></a>
+									<a class="header__social-link" href="#"><img class="header__social-icon" src="img/wapp-icon.svg"></a>
+								</div>
+								<div class="select_lang">
+									<span class="rus">рус</span>/<span class="ukr">укр</span>
+								</div>
+								<a class="header__top-link header__regist-link" href="#">Войти/Регистрация</a>
+
+							</div>
+						</div>
+					</div>
+					<nav class="header__nav">
+						<div class="header_conteiner">
+							<div class="header__nav-inner">
+								<div class="sidebarIcon">
+									<div class="sidebarIcon__stripe"></div>
+									<div class="sidebarIcon__stripe"></div>
+									<div class="sidebarIcon__stripe"></div>
+								</div>
+								<a class="logo" href="#"></a>
+								<div class="header__contacts">
+									<div class="header__contact header__contact-canHidden">
+										<div class="header__contactElement">
+											<img src="img/Mask group.svg" alt="">
+											<p>+38(095) 453-22-80</p>
+										</div>
+										<div class="header__contactElement">
+											<img src="img/vodafone-1324440251639049264 1.svg" alt="">
+											<p>+38(063) 323-90-34</p>
+										</div>
+									</div>
+									<div class="header__contact">
+										<div class="header__contactElement">
+											<img src="img/Mask group2.svg" alt="">
+											<p>+38(095) 453-22-80</p>
+										</div>
+										<div class="header__contactSocials">
+											<img src="img/icons8-viber 1.svg" alt="">
+											<img src="img/telegram-line.svg" alt="">
+											<img src="img/whatsapp-line.svg" alt="">
+										</div>
+									</div>
+								</div>
+								<button class="catalog__btn btn">КАТАЛОГ</button>
+								<div data-da=".header__inner, 770" class="search__wrap">
+									<div class="search__inner">
+										<input class="search" type="search" placeholder="Поиск по сайту">
+									</div>
+									<div class="search__list-wrap">
+										<div class="search__list">
+											<div class="search__list-item">
+												<a class="search__list-link" href="#">
+													<div class="search__content">
+														<div class="search__img-box">
+															<img class="search__list-img" src="img/search-img.png">
+														</div>
+														<h4 class="search__content-title">Ламинат Graham & Brown SYMMETRY</h4>
+													</div>
+													<samp class="search__price">
+														770 грн/уп
+													</samp>
+												</a>
+											</div>
+											<div class="search__list-item">
+												<a class="search__list-link" href="#">
+													<div class="search__content">
+														<div class="search__img-box">
+															<img class="search__list-img" src="img/search-img.png">
+														</div>
+														<h4 class="search__content-title">Ламинат Graham & Brown SYMMETRY</h4>
+													</div>
+													<samp class="search__price">
+														770 грн/уп
+													</samp>
+												</a>
+											</div>
+											<div class="search__list-item">
+												<a class="search__list-link" href="#">
+													<div class="search__content">
+														<div class="search__img-box">
+															<img class="search__list-img" src="img/search-img.png">
+														</div>
+														<h4 class="search__content-title">Ламинат Graham & Brown SYMMETRY</h4>
+													</div>
+													<samp class="search__price">
+														770 грн/уп
+													</samp>
+												</a>
+											</div>
+											<div class="search__list-item">
+												<a class="search__list-link" href="#">
+													<div class="search__content">
+														<div class="search__img-box">
+															<img class="search__list-img" src="img/search-img.png">
+														</div>
+														<h4 class="search__content-title">Ламинат Graham & Brown SYMMETRY</h4>
+													</div>
+													<samp class="search__price">
+														770 грн/уп
+													</samp>
+												</a>
+											</div>
+
+										</div>
+									</div>
+									<div class="overlay__search"></div>
+								</div>
+								<div class="header__links-wrap">
+									<a class="header__nav-link header__nav-scales" href="#">
+										<svg class="header__svg-scales" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M29.8744 18.3138L24.8201 9.88914L29.3561 8.62912C29.8238 8.49922 30.0976 8.01475 29.9677 7.54705C29.8378 7.07935 29.3532 6.80548 28.8856 6.93544L23.2471 8.50168C23.2467 8.50179 23.2463 8.50191 23.2459 8.50203L15.8789 10.5484V0.87892C15.8789 0.393522 15.4854 0 15 0C14.5146 0 14.1211 0.393522 14.1211 0.87892V11.0367L6.30219 13.2085C6.30178 13.2086 6.30137 13.2088 6.30096 13.2088L0.643921 14.7802C0.176168 14.9101 -0.0975815 15.3946 0.0322619 15.8623C0.140367 16.2513 0.493628 16.5062 0.878588 16.5062C0.956459 16.5062 1.03568 16.4957 1.11431 16.4739L4.64083 15.4943L0.125602 23.0207C0.0436877 23.1573 0.000328409 23.3136 0.000328409 23.4729C0.000328409 27.072 2.92843 30 6.52748 30C10.1267 30 13.0547 27.072 13.0547 23.4729C13.0547 23.3136 13.0114 23.1573 12.9294 23.0207L7.87502 14.596L21.5857 10.7875L17.0705 18.3138C16.9886 18.4504 16.9453 18.6067 16.9453 18.766C16.9453 22.3651 19.8733 25.2931 23.4724 25.2931C25.2159 25.2931 26.855 24.6142 28.0879 23.3813C29.3207 22.1484 29.9997 20.5094 29.9996 18.7659C29.9997 18.6067 29.9564 18.4503 29.8744 18.3138ZM6.52748 28.2422C4.19797 28.2422 2.25407 26.563 1.84023 24.3518H11.2147C10.8009 26.563 8.85705 28.2422 6.52748 28.2422ZM10.6236 22.5939H2.43144L6.52748 15.7665L10.6236 22.5939ZM23.4724 11.0596L27.5686 17.887H19.3763L23.4724 11.0596ZM23.4725 23.5354C21.143 23.5354 19.1991 21.8562 18.7851 19.6449H28.1598C27.7459 21.8562 25.8021 23.5354 23.4725 23.5354Z" />
+										</svg>
+										<!--<span class="header__link-circle header__scales-circle">2</span>-->
+
+									</a>
+									<a class="header__nav-link header__nav-heart" href="#">
+										<svg class="header__svg header__svg-heart" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.828 27.7461C16.3746 27.9061 15.628 27.9061 15.1746 27.7461C11.308 26.4261 2.66797 20.9195 2.66797 11.5861C2.66797 7.46615 5.98797 4.13281 10.0813 4.13281C12.508 4.13281 14.6546 5.30615 16.0013 7.11948C17.348 5.30615 19.508 4.13281 21.9213 4.13281C26.0146 4.13281 29.3346 7.46615 29.3346 11.5861C29.3346 20.9195 20.6946 26.4261 16.828 27.7461Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+										<!--<span class="header__link-circle header__heart-circle">1</span>-->
+									</a>
+
+									<a class="header__nav-link header__nav-basket" href="#">
+										<span class="header__nav-svg">
+											<svg class="header__svg header__svg-basket" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6.26172 7.65625H27.2561C27.6815 7.65627 28.1022 7.74542 28.491 7.91797C28.8799 8.09051 29.2282 8.34262 29.5137 8.65803C29.7991 8.97345 30.0153 9.34518 30.1483 9.74926C30.2812 10.1533 30.3281 10.5808 30.2858 11.0041L29.3723 20.1387C29.2972 20.89 28.9455 21.5866 28.3857 22.0933C27.8259 22.6 27.0977 22.8806 26.3426 22.8806H11.8034C11.0992 22.8809 10.4167 22.6371 9.87209 22.1907C9.32747 21.7444 8.95438 21.123 8.81637 20.4325L6.26172 7.65625Z" stroke="#1E1E1E" stroke-width="2" stroke-linejoin="round" />
+												<path d="M6.26262 7.65615L5.02945 2.71889C4.94697 2.38967 4.75686 2.09744 4.4893 1.88864C4.22174 1.67983 3.89208 1.56642 3.55268 1.56641H1.69531M10.8299 28.9703H13.8748M23.0094 28.9703H26.0543" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+										<span class="basket-counter">1</span>
+										<span class="basket-masseg ">
+											<!--products-in__basket-->
+											КОРЗИНА
+											<div class="basket-masseg__box">
+												<P>1</P> товар
+											</div>
+										</span>
+
+									</a>
+								</div>
+
+								<div class="mega-menu__wrap">
+									<div class="mega-menu">
+										<div class="mega-menu__left">
+											<div class="mega-menu__header">
+												<p>Каталог товаров</p>
+												<img class="mega-menu__exit" src="img/Group 2562.png" alt="">
+											</div>
+											<hr class="mega-menu__line">
+											<ul class="menu__1lvl">
+												<li>
+													<a href="#">Обои</a>
+
+													<Ul class="submenu">
+														<li>
+															<div class="submenu__box">
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Помещение</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Кухня</a></li>
+																		<li><a href="#">Спальня</a></li>
+																		<li><a href="#">Зал</a></li>
+																		<li><a href="#">Комната</a></li>
+																		<li><a href="#">Коридор</a></li>
+																		<li><a href="#">Детская</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Тематика</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Арт</a></li>
+																		<li><a href="#">Цветы</a></li>
+																		<li><a href="#">Космос</a></li>
+																		<li><a href="#">Природа</a></li>
+																		<li><a href="#">Город</a></li>
+																		<li><a href="#">Роза</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Рисунок</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Однотонные</a></li>
+																		<li><a href="#">Кирпич</a></li>
+																		<li><a href="#">Цветы</a></li>
+																		<li><a href="#">Полоска</a></li>
+																		<li><a href="#">Дерево</a></li>
+																		<li><a href="#">Штукатурка</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Тип</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Под покраску</a></li>
+																		<li><a href="#">Самоклеющиеся</a></li>
+																		<li><a href="#">Фотообои</a></li>
+																		<li><a href="#">Бамбуковые</a></li>
+																		<li><a href="#">Виниловые</a></li>
+																		<li><a href="#">Моющиеся</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Оттенок</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Черные</a></li>
+																		<li><a href="#">Белые</a></li>
+																		<li><a href="#">Черное-белые</a></li>
+																		<li><a href="#">Красные</a></li>
+																		<li><a href="#">Серые</a></li>
+																		<li><a href="#">Синие</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Стиль</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Лофт</a></li>
+																		<li><a href="#">Прованс</a></li>
+																		<li><a href="#">Версталь</a></li>
+																		<li><a href="#">Скандинавский</a></li>
+																		<li><a href="#">Японский</a></li>
+																		<li><a href="#">Английский</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Дети и подростки</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Для девочек</a></li>
+																		<li><a href="#">Для мальчиков</a></li>
+																		<li><a href="#">Детские</a></li>
+																		<li><a href="#">Для подростков</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">назначение</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Для стен</a></li>
+																		<li><a href="#">Для потолка</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Время года</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Весна</a></li>
+																		<li><a href="#">Лето</a></li>
+																		<li><a href="#">Осень</a></li>
+																		<li><a href="#">Зима</a></li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+													</Ul>
+													<div class="submenu-mobile">
+														<div class="submenu-mobile__wrapper">
+															<div class="submenu-mobile__header">
+																<p>Обои</p>
+																<img class="submenu-mobile__exit" src="img/Group 2655.svg" alt="">
+															</div>
+															<hr class="mega-menu__line">
+															<div class="submenu-mobile__links">
+																<div class="submenu-mobile__link">
+																	<p>Помещение</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Помещение</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Кухня</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Спальня</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Зал</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Комната</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Коридор</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Детская</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Назначение</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Назначение</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для стен</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для потолка</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Дети и подростки</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Дети и подростки</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для девочек</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для мальчиков</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Детские</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для подростков</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Рисунок</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Рисунок</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Отднотонные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Кирпич</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Цветы</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Полоска</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Дерево</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Штукатурка</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Стиль</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Стиль</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Лофт</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Прованс</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Версталь</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Скандинавский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Японский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Английский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Тематика</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Тематика</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Арт</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Цветы</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Космос</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Природа</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Город</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Роза</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Время года</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Время года</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Весна</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Лето</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Осень</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Зима</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Тип</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Тип</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Под покраску</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Самоклеющиеся</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Фотообои</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Бамбуковые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Виниловые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Моющиеся</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Оттенок</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Оттенок</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Черные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Белые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Черное-белые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Красные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Серые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Синие</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+															</div>
+														</div>
+													</div>
+												</li>
+												<hr class="mega-menu__line">
+												<li>
+													<a href="#">Ламинат</a>
+
+													<Ul class="submenu">
+														<li>
+															<div class="submenu__box">
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Помещение</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Кухня</a></li>
+																		<li><a href="#">Спальня</a></li>
+																		<li><a href="#">Зал</a></li>
+																		<li><a href="#">Комната</a></li>
+																		<li><a href="#">Коридор</a></li>
+																		<li><a href="#">Детская</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Тематика</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Арт</a></li>
+																		<li><a href="#">Цветы</a></li>
+																		<li><a href="#">Космос</a></li>
+																		<li><a href="#">Природа</a></li>
+																		<li><a href="#">Город</a></li>
+																		<li><a href="#">Роза</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Рисунок</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Однотонные</a></li>
+																		<li><a href="#">Кирпич</a></li>
+																		<li><a href="#">Цветы</a></li>
+																		<li><a href="#">Полоска</a></li>
+																		<li><a href="#">Дерево</a></li>
+																		<li><a href="#">Штукатурка</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Тип</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Под покраску</a></li>
+																		<li><a href="#">Самоклеющиеся</a></li>
+																		<li><a href="#">Фотообои</a></li>
+																		<li><a href="#">Бамбуковые</a></li>
+																		<li><a href="#">Виниловые</a></li>
+																		<li><a href="#">Моющиеся</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Оттенок</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Черные</a></li>
+																		<li><a href="#">Белые</a></li>
+																		<li><a href="#">Черное-белые</a></li>
+																		<li><a href="#">Красные</a></li>
+																		<li><a href="#">Серые</a></li>
+																		<li><a href="#">Синие</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Стиль</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Лофт</a></li>
+																		<li><a href="#">Прованс</a></li>
+																		<li><a href="#">Версталь</a></li>
+																		<li><a href="#">Скандинавский</a></li>
+																		<li><a href="#">Японский</a></li>
+																		<li><a href="#">Английский</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Дети и подростки</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Для девочек</a></li>
+																		<li><a href="#">Для мальчиков</a></li>
+																		<li><a href="#">Детские</a></li>
+																		<li><a href="#">Для подростков</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">назначение</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Для стен</a></li>
+																		<li><a href="#">Для потолка</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Время года</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Весна</a></li>
+																		<li><a href="#">Лето</a></li>
+																		<li><a href="#">Осень</a></li>
+																		<li><a href="#">Зима</a></li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+														<li>
+														</li>
+													</Ul>
+													<div class="submenu-mobile">
+														<div class="submenu-mobile__wrapper">
+															<div class="submenu-mobile__header">
+																<p>Обои</p>
+																<img class="submenu-mobile__exit" src="img/Group 2655.svg" alt="">
+															</div>
+															<hr class="mega-menu__line">
+															<div class="submenu-mobile__links">
+																<div class="submenu-mobile__link">
+																	<p>Помещение</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Помещение</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Кухня</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Спальня</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Зал</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Комната</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Коридор</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Детская</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Назначение</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Назначение</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для стен</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для потолка</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Дети и подростки</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Дети и подростки</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для девочек</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для мальчиков</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Детские</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для подростков</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Рисунок</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Рисунок</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Отднотонные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Кирпич</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Цветы</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Полоска</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Дерево</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Штукатурка</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Стиль</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Стиль</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Лофт</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Прованс</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Версталь</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Скандинавский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Японский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Английский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Тематика</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Тематика</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Арт</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Цветы</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Космос</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Природа</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Город</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Роза</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Время года</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Время года</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Весна</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Лето</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Осень</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Зима</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Тип</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Тип</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Под покраску</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Самоклеющиеся</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Фотообои</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Бамбуковые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Виниловые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Моющиеся</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Оттенок</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Оттенок</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Черные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Белые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Черное-белые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Красные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Серые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Синие</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+															</div>
+														</div>
+													</div>
+													<ul class="subsection">
+														<li>
+															<a href="#">Подложка под ламинат</a>
+
+															<Ul class="subsection__submenu">
+																<li>
+																	<div class="submenu__box">
+																		<div class="submenu__box-item">
+																			<h4 class="submenu__box-title">Помещение</h4>
+																			<ul class="submenu__box-list">
+																				<li><a href="#">Кухня</a></li>
+																				<li><a href="#">Спальня</a></li>
+																				<li><a href="#">Зал</a></li>
+																				<li><a href="#">Комната</a></li>
+																				<li><a href="#">Коридор</a></li>
+																				<li><a href="#">Детская</a></li>
+																			</ul>
+																		</div>
+																		<div class="submenu__box-item">
+																			<h4 class="submenu__box-title">Тематика</h4>
+																			<ul class="submenu__box-list">
+																				<li><a href="#">Арт</a></li>
+																				<li><a href="#">Цветы</a></li>
+																				<li><a href="#">Космос</a></li>
+																				<li><a href="#">Природа</a></li>
+																				<li><a href="#">Город</a></li>
+																				<li><a href="#">Роза</a></li>
+																			</ul>
+																		</div>
+																		<div class="submenu__box-item">
+																			<h4 class="submenu__box-title">Рисунок</h4>
+																			<ul class="submenu__box-list">
+																				<li><a href="#">Однотонные</a></li>
+																				<li><a href="#">Кирпич</a></li>
+																				<li><a href="#">Цветы</a></li>
+																				<li><a href="#">Полоска</a></li>
+																				<li><a href="#">Дерево</a></li>
+																				<li><a href="#">Штукатурка</a></li>
+																			</ul>
+																		</div>
+																		<div class="submenu__box-item">
+																			<h4 class="submenu__box-title">Тип</h4>
+																			<ul class="submenu__box-list">
+																				<li><a href="#">Под покраску</a></li>
+																				<li><a href="#">Самоклеющиеся</a></li>
+																				<li><a href="#">Фотообои</a></li>
+																				<li><a href="#">Бамбуковые</a></li>
+																				<li><a href="#">Виниловые</a></li>
+																				<li><a href="#">Моющиеся</a></li>
+																			</ul>
+																		</div>
+																		<div class="submenu__box-item">
+																			<h4 class="submenu__box-title">Оттенок</h4>
+																			<ul class="submenu__box-list">
+																				<li><a href="#">Черные</a></li>
+																				<li><a href="#">Белые</a></li>
+																				<li><a href="#">Черное-белые</a></li>
+																				<li><a href="#">Красные</a></li>
+																				<li><a href="#">Серые</a></li>
+																				<li><a href="#">Синие</a></li>
+																			</ul>
+																		</div>
+																</li>
+															</Ul>
+														</li>
+													</ul>
+
+
+												</li>
+												<hr class="mega-menu__line">
+												<li>
+													<a href="#">Виниловый пол</a>
+
+													<Ul class="submenu">
+														<li>
+															<div class="submenu__box">
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Помещение</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Кухня</a></li>
+																		<li><a href="#">Спальня</a></li>
+																		<li><a href="#">Зал</a></li>
+																		<li><a href="#">Комната</a></li>
+																		<li><a href="#">Коридор</a></li>
+																		<li><a href="#">Детская</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Тематика</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Арт</a></li>
+																		<li><a href="#">Цветы</a></li>
+																		<li><a href="#">Космос</a></li>
+																		<li><a href="#">Природа</a></li>
+																		<li><a href="#">Город</a></li>
+																		<li><a href="#">Роза</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Рисунок</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Однотонные</a></li>
+																		<li><a href="#">Кирпич</a></li>
+																		<li><a href="#">Цветы</a></li>
+																		<li><a href="#">Полоска</a></li>
+																		<li><a href="#">Дерево</a></li>
+																		<li><a href="#">Штукатурка</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Тип</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Под покраску</a></li>
+																		<li><a href="#">Самоклеющиеся</a></li>
+																		<li><a href="#">Фотообои</a></li>
+																		<li><a href="#">Бамбуковые</a></li>
+																		<li><a href="#">Виниловые</a></li>
+																		<li><a href="#">Моющиеся</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Оттенок</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Черные</a></li>
+																		<li><a href="#">Белые</a></li>
+																		<li><a href="#">Черное-белые</a></li>
+																		<li><a href="#">Красные</a></li>
+																		<li><a href="#">Серые</a></li>
+																		<li><a href="#">Синие</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Стиль</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Лофт</a></li>
+																		<li><a href="#">Прованс</a></li>
+																		<li><a href="#">Версталь</a></li>
+																		<li><a href="#">Скандинавский</a></li>
+																		<li><a href="#">Японский</a></li>
+																		<li><a href="#">Английский</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Дети и подростки</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Для девочек</a></li>
+																		<li><a href="#">Для мальчиков</a></li>
+																		<li><a href="#">Детские</a></li>
+																		<li><a href="#">Для подростков</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">назначение</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Для стен</a></li>
+																		<li><a href="#">Для потолка</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Время года</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Весна</a></li>
+																		<li><a href="#">Лето</a></li>
+																		<li><a href="#">Осень</a></li>
+																		<li><a href="#">Зима</a></li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+													</Ul>
+													<div class="submenu-mobile">
+														<div class="submenu-mobile__wrapper">
+															<div class="submenu-mobile__header">
+																<p>Обои</p>
+																<img class="submenu-mobile__exit" src="img/Group 2655.svg" alt="">
+															</div>
+															<hr class="mega-menu__line">
+															<div class="submenu-mobile__links">
+																<div class="submenu-mobile__link">
+																	<p>Помещение</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Помещение</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Кухня</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Спальня</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Зал</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Комната</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Коридор</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Детская</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Назначение</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Назначение</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для стен</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для потолка</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Дети и подростки</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Дети и подростки</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для девочек</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для мальчиков</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Детские</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для подростков</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Рисунок</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Рисунок</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Отднотонные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Кирпич</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Цветы</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Полоска</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Дерево</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Штукатурка</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Стиль</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Стиль</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Лофт</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Прованс</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Версталь</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Скандинавский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Японский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Английский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Тематика</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Тематика</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Арт</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Цветы</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Космос</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Природа</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Город</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Роза</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Время года</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Время года</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Весна</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Лето</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Осень</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Зима</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Тип</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Тип</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Под покраску</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Самоклеющиеся</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Фотообои</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Бамбуковые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Виниловые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Моющиеся</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Оттенок</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Оттенок</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Черные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Белые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Черное-белые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Красные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Серые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Синие</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+															</div>
+														</div>
+													</div>
+												</li>
+												<hr class="mega-menu__line">
+												<li>
+													<a href="#">Плинтус</a>
+
+													<Ul class="submenu">
+														<li>
+															<div class="submenu__box">
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Помещение</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Кухня</a></li>
+																		<li><a href="#">Спальня</a></li>
+																		<li><a href="#">Зал</a></li>
+																		<li><a href="#">Комната</a></li>
+																		<li><a href="#">Коридор</a></li>
+																		<li><a href="#">Детская</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Тематика</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Арт</a></li>
+																		<li><a href="#">Цветы</a></li>
+																		<li><a href="#">Космос</a></li>
+																		<li><a href="#">Природа</a></li>
+																		<li><a href="#">Город</a></li>
+																		<li><a href="#">Роза</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Рисунок</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Однотонные</a></li>
+																		<li><a href="#">Кирпич</a></li>
+																		<li><a href="#">Цветы</a></li>
+																		<li><a href="#">Полоска</a></li>
+																		<li><a href="#">Дерево</a></li>
+																		<li><a href="#">Штукатурка</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Тип</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Под покраску</a></li>
+																		<li><a href="#">Самоклеющиеся</a></li>
+																		<li><a href="#">Фотообои</a></li>
+																		<li><a href="#">Бамбуковые</a></li>
+																		<li><a href="#">Виниловые</a></li>
+																		<li><a href="#">Моющиеся</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Оттенок</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Черные</a></li>
+																		<li><a href="#">Белые</a></li>
+																		<li><a href="#">Черное-белые</a></li>
+																		<li><a href="#">Красные</a></li>
+																		<li><a href="#">Серые</a></li>
+																		<li><a href="#">Синие</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Стиль</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Лофт</a></li>
+																		<li><a href="#">Прованс</a></li>
+																		<li><a href="#">Версталь</a></li>
+																		<li><a href="#">Скандинавский</a></li>
+																		<li><a href="#">Японский</a></li>
+																		<li><a href="#">Английский</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Дети и подростки</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Для девочек</a></li>
+																		<li><a href="#">Для мальчиков</a></li>
+																		<li><a href="#">Детские</a></li>
+																		<li><a href="#">Для подростков</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">назначение</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Для стен</a></li>
+																		<li><a href="#">Для потолка</a></li>
+																	</ul>
+																</div>
+																<div class="submenu__box-item">
+																	<h4 class="submenu__box-title">Время года</h4>
+																	<ul class="submenu__box-list">
+																		<li><a href="#">Весна</a></li>
+																		<li><a href="#">Лето</a></li>
+																		<li><a href="#">Осень</a></li>
+																		<li><a href="#">Зима</a></li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+													</Ul>
+													<div class="submenu-mobile">
+														<div class="submenu-mobile__wrapper">
+															<div class="submenu-mobile__header">
+																<p>Обои</p>
+																<img class="submenu-mobile__exit" src="img/Group 2655.svg" alt="">
+															</div>
+															<hr class="mega-menu__line">
+															<div class="submenu-mobile__links">
+																<div class="submenu-mobile__link">
+																	<p>Помещение</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Помещение</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Кухня</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Спальня</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Зал</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Комната</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Коридор</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Детская</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Назначение</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Назначение</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для стен</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для потолка</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Дети и подростки</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Дети и подростки</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для девочек</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для мальчиков</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Детские</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Для подростков</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Рисунок</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Рисунок</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Отднотонные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Кирпич</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Цветы</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Полоска</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Дерево</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Штукатурка</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Стиль</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Стиль</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Лофт</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Прованс</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Версталь</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Скандинавский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Японский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Английский</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Тематика</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Тематика</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Арт</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Цветы</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Космос</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Природа</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Город</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Роза</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Время года</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Время года</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Весна</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Лето</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Осень</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Зима</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Тип</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Тип</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Под покраску</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Самоклеющиеся</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Фотообои</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Бамбуковые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Виниловые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Моющиеся</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+																<div class="submenu-mobile__link">
+																	<p>Оттенок</p>
+																	<div><img src="img/layer1.svg" alt=""></div>
+																	<div class="submenu-mobileSection">
+																		<div class="submenu-mobileSection__wrapper">
+																			<div class="submenu-mobileSection__header">
+																				<p>Оттенок</p>
+																				<img class="submenu-mobileSection__exit" src="img/Group 2655.svg" alt="">
+																			</div>
+																			<hr class="mega-menu__line">
+																			<div class="submenu-mobileSection__links">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Черные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Белые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Черное-белые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Красные</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Серые</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																				<a href="" class="submenu-mobileSection__link">
+																					<p>Синие</p>
+																					<div><img src="img/layer1.svg" alt=""></div>
+																				</a>
+																				<hr class="mega-menu__line">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<hr class="mega-menu__line">
+															</div>
+														</div>
+													</div>
+													<ul class="subsection">
+														<li>
+															<a href="#">Подложка под ламинат</a>
+															<Ul class="subsection__submenu">
+																<li>
+																	<div class="submenu__box">
+																		<div class="submenu__box-item">
+																			<h4 class="submenu__box-title">Помещение</h4>
+																			<ul class="submenu__box-list">
+																				<li><a href="#">Кухня</a></li>
+																				<li><a href="#">Спальня</a></li>
+																				<li><a href="#">Зал</a></li>
+																				<li><a href="#">Комната</a></li>
+																				<li><a href="#">Коридор</a></li>
+																				<li><a href="#">Детская</a></li>
+																			</ul>
+																		</div>
+																		<div class="submenu__box-item">
+																			<h4 class="submenu__box-title">Тематика</h4>
+																			<ul class="submenu__box-list">
+																				<li><a href="#">Арт</a></li>
+																				<li><a href="#">Цветы</a></li>
+																				<li><a href="#">Космос</a></li>
+																				<li><a href="#">Природа</a></li>
+																				<li><a href="#">Город</a></li>
+																				<li><a href="#">Роза</a></li>
+																			</ul>
+																		</div>
+																		<div class="submenu__box-item">
+																			<h4 class="submenu__box-title">Рисунок</h4>
+																			<ul class="submenu__box-list">
+																				<li><a href="#">Однотонные</a></li>
+																				<li><a href="#">Кирпич</a></li>
+																				<li><a href="#">Цветы</a></li>
+																				<li><a href="#">Полоска</a></li>
+																				<li><a href="#">Дерево</a></li>
+																				<li><a href="#">Штукатурка</a></li>
+																			</ul>
+																		</div>
+																		<div class="submenu__box-item">
+																			<h4 class="submenu__box-title">Тип</h4>
+																			<ul class="submenu__box-list">
+																				<li><a href="#">Под покраску</a></li>
+																				<li><a href="#">Самоклеющиеся</a></li>
+																				<li><a href="#">Фотообои</a></li>
+																				<li><a href="#">Бамбуковые</a></li>
+																				<li><a href="#">Виниловые</a></li>
+																				<li><a href="#">Моющиеся</a></li>
+																			</ul>
+																		</div>
+																		<div class="submenu__box-item">
+																			<h4 class="submenu__box-title">Оттенок</h4>
+																			<ul class="submenu__box-list">
+																				<li><a href="#">Черные</a></li>
+																				<li><a href="#">Белые</a></li>
+																				<li><a href="#">Черное-белые</a></li>
+																				<li><a href="#">Красные</a></li>
+																				<li><a href="#">Серые</a></li>
+																				<li><a href="#">Синие</a></li>
+																			</ul>
+																		</div>
+																</li>
+															</Ul>
+														</li>
+													</ul>
+												</li>
+												<hr class="mega-menu__line">
+											</ul>
+										</div>
+
+									</div>
+									<div class="overlay"></div>
+								</div>
+
+							</div>
+
+						</div>
+					</nav>
+
+				</div>
+			</div>
+
+
+		</header>
+		<main class="page ord_page">
+			<div class="ordering">
+				<div class="container">
+					<div class="breadcrumbs">
+						<ul class="breadcrumbs__box">
+							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a></li>
+							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Контакты</a></li>
+						</ul>
+					</div>
+					<p class="ordering__title _title">ОФОРМЛЕНИЕ ЗАКАЗА</p>
+					<div class="ordering__back">
+						<img src="img/1orange_arrow.svg" alt="">
+						<a href="">Вернуться к покупкам</a>
+					</div>
+					<div class="ordering__links">
+						<button class="ordering__link ordering__link_base ordering__link_selected">Оформление заказа</button>
+						<button class="ordering__link ordering__link_quick">Быстрый заказ</button>
+					</div>
+					<div class="ordering__main">
+
+						<form action="">
+							<div class="ordering__base-order">
+								<div class="ordering__contact-data">
+									<p class="ordering__subtitle">Контактные данные</p>
+									<div class="ordering__fields">
+										<div class="ordering__field">
+											<label for="name">Имя*</label>
+											<input placeholder="Имя" id="name" type="text">
+										</div>
+										<div class="ordering__field">
+											<label for="surname">Фамилия*</label>
+											<input placeholder="Фамилия" id="surname" type="text">
+										</div>
+										<div class="ordering__field">
+											<label for="phone">Номер телефона*</label>
+											<input placeholder="+38 (095) 567 89 89" id="phone" type="phone">
+										</div>
+										<div class="ordering__field">
+											<label for="email">Email (для отправки деталей заказа)*</label>
+											<input placeholder="E-mail" id="email" type="email">
+										</div>
+									</div>
+									<div class="ordering__field ordering__field_big">
+										<label for="comment">Комментарий</label>
+										<textarea placeholder="Напишите свое пожелание" name="" id="comment" cols="30" rows="10"></textarea>
+									</div>
+									<div class="ordering__checkbox-container">
+										<input type="checkbox" name="" id="checkbox">
+										<label for="checkbox">Согласие на обработку персональных данных</label>
+									</div>
+								</div>
+								<div class="ordering__delevery">
+									<p class="ordering__subtitle">Способ доставки:</p>
+									<div class="ordering__initial-radio">
+										<input checked type="radio" name="radio" id="initial-radio">
+										<label for="initial-radio">Новая почта</label>
+									</div>
+									<div class="ordering__radios">
+										<div class="ordering__radio">
+											<input checked type="radio" name="radio1" id="radio1">
+											<label for="radio1">В отделении</label>
+										</div>
+										<div class="ordering__radio ordering__radio_pc">
+											<input type="radio" name="radio1" id="radio2">
+											<label for="radio2">В почтомат</label>
+										</div>
+										<div class="ordering__radio ordering__radio_pc">
+											<input type="radio" name="radio1" id="radio3">
+											<label for="radio3">По Адресу</label>
+										</div>
+									</div>
+									<div class="ordering__delevery-fields">
+										<div class="ordering__delevery-field">
+											<label for="delevery1">Область</label>
+											<input id="delevery1" placeholder="Область" type="text">
+										</div>
+										<div class="ordering__delevery-field">
+											<label for="delevery2">Населенный пункт</label>
+											<input id="delevery2" placeholder="Область" type="text">
+										</div>
+										<div class="ordering__delevery-field">
+											<label for="delevery3">Выберите отделении</label>
+											<select value="" name="" id="delevery3">
+												<option selected disabled hidden value="">Choose something</option>
+												<option value="">option1</option>
+												<option value="">option2</option>
+											</select>
+										</div>
+										<div class="ordering__delevery-field ordering__delevery-field_mobile">
+											<div class="ordering__radio">
+												<input type="radio" name="radio1" id="radio2_2">
+												<label for="radio2_2">В почтомат</label>
+											</div>
+											<div class="ordering__radio">
+												<input type="radio" name="radio1" id="radio3_3">
+												<label for="radio3_3">По Адресу</label>
+											</div>
+										</div>
+									</div>
+									<div class="ordering__radios2">
+										<div class="ordering__radio2">
+											<input type="radio" name="radio" id="radio2_1">
+											<label for="radio2_1">Укрпочта</label>
+										</div>
+										<div class="ordering__radio2">
+											<input type="radio" name="radio" id="radio2_2">
+											<label for="radio2_2">Курьером</label>
+										</div>
+										<div class="ordering__radio2">
+											<input type="radio" name="radio" id="radio2_3">
+											<label for="radio2_3">Самовывоз (г. Киев, ул.Туполева 54)</label>
+										</div>
+									</div>
+								</div>
+								<div class="ordering__payment">
+									<p class="ordering__subtitle">Способ оплаты:</p>
+									<div class="ordering__payment-radios">
+										<div class="ordering__payment-radio">
+											<input type="radio" name="payment-radio" id="payment-radio1">
+											<label for="payment-radio1">Наложеный платеж</label>
+										</div>
+										<div class="ordering__payment-radio">
+											<input type="radio" name="payment-radio" id="payment-radio2">
+											<label for="payment-radio2">Оплата на р/с</label>
+										</div>
+										<div class="ordering__payment-radio">
+											<input type="radio" name="payment-radio" id="payment-radio3">
+											<label for="payment-radio3">Наличными в Шоу Руме</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+
+						<div hidden class="ordering__quick-order">
+							<div class="ordering__contact-data">
+								<p class="ordering__subtitle">Контактные данные</p>
+								<form action="">
+									<div class="ordering__fields">
+										<div class="ordering__field">
+											<label for="name_quick">Имя, Фамилия*</label>
+											<input placeholder="Имя" id="name_quick" type="text">
+										</div>
+										<div class="ordering__field">
+											<label for="phone_quick">Номер телефона*</label>
+											<input placeholder="+38 (095) 567 89 89" id="phone_quick" type="phone">
+										</div>
+									</div>
+									<div class="ordering__checkbox-container">
+										<input type="checkbox" name="" id="checkbox_quick">
+										<label for="checkbox_quick">Согласие на обработку персональных данных</label>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="check">
+							<div class="check__header">
+								<p class="check__title">ВАШ ЗАКАЗ</p>
+								<a href="" class="check__change">Изменить</a>
+							</div>
+							<div class="check__preview">
+								<img src="img/ordering__check__image.svg" alt="">
+								<div class="check__preview-description">
+									<h1>RASCH AFRICAN QUEEN - ИНТЕРЬЕР №1</h1>
+									<p>1 x 1 230 грн. = 1230 грн</p>
+								</div>
+							</div>
+							<div class="check__description">
+								<div class="check__description-section">
+									<p>Всего</p>
+									<p>1560 грн</p>
+								</div>
+								<div class="check__description-section">
+									<p>Скидка</p>
+									<p>- 1300 грн</p>
+								</div>
+								<div class="check__description-section check__description-section_total">
+									<h1>Итого</h1>
+									<p>1230 грн</p>
+								</div>
+							</div>
+							<button class="check__submit">ОФОРМИТЬ ЗАКАЗ</button>
+							<div class="ordering__checkbox-container">
+								<input type="checkbox" name="" id="checkbox2">
+								<label for="checkbox2">Оформляя заказ Вы соглашаетесь с условиями обслуживания</label>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="conteiner__big">
+				<div class="footer__inner">
+					<div class="conteiner">
+						<div class="footer__top">
+							<div class="footer__item _550-cards">
+								<a class="footer__logo" href="#"><img class="logo__img" src="img/logo-footer.png"></a>
+								<a class="footer__item-link" href="#">Войти в личный кабинет</a>
+								<a class="footer__item-link" href="#">Регистрация</a>
+								<div class="social social_absolute">
+									<a href="#" class="social__item">
+										<svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.5 11.5H10L11 7.5H7.5V5.5C7.5 4.47 7.5 3.5 9.5 3.5H11V0.14C10.674 0.0970001 9.443 0 8.143 0C5.428 0 3.5 1.657 3.5 4.7V7.5H0.5V11.5H3.5V20H7.5V11.5Z" />
+										</svg>
+									</a>
+									<a href="#" class="social__item">
+										<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.132 2.80182C20.8654 1.86849 20.1987 1.20182 19.2654 0.935156C17.6654 0.535156 10.8654 0.535156 10.8654 0.535156C10.8654 0.535156 4.19871 0.535156 2.46537 0.935156C1.53204 1.20182 0.86536 1.86849 0.598694 2.80182C0.332027 4.53516 0.332031 8.00182 0.332031 8.00182C0.332031 8.00182 0.332035 11.4685 0.732035 13.2018C0.998702 14.1352 1.66536 14.8018 2.59869 15.0685C4.19869 15.4685 10.9987 15.4685 10.9987 15.4685C10.9987 15.4685 17.6653 15.4685 19.3987 15.0685C20.332 14.8018 20.9987 14.1352 21.2654 13.2018C21.6654 11.4685 21.6654 8.00182 21.6654 8.00182C21.6654 8.00182 21.6654 4.53516 21.132 2.80182ZM8.86536 11.2018V4.80182L14.4654 8.00182L8.86536 11.2018Z" />
+										</svg>
+									</a>
+									<a href="#" class="social__item">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10 7C9.20435 7 8.44129 7.31607 7.87868 7.87868C7.31607 8.44129 7 9.20435 7 10C7 10.7956 7.31607 11.5587 7.87868 12.1213C8.44129 12.6839 9.20435 13 10 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 10 7ZM10 5C11.3261 5 12.5979 5.52678 13.5355 6.46447C14.4732 7.40215 15 8.67392 15 10C15 11.3261 14.4732 12.5979 13.5355 13.5355C12.5979 14.4732 11.3261 15 10 15C8.67392 15 7.40215 14.4732 6.46447 13.5355C5.52678 12.5979 5 11.3261 5 10C5 8.67392 5.52678 7.40215 6.46447 6.46447C7.40215 5.52678 8.67392 5 10 5V5ZM16.5 4.75C16.5 5.08152 16.3683 5.39946 16.1339 5.63388C15.8995 5.8683 15.5815 6 15.25 6C14.9185 6 14.6005 5.8683 14.3661 5.63388C14.1317 5.39946 14 5.08152 14 4.75C14 4.41848 14.1317 4.10054 14.3661 3.86612C14.6005 3.6317 14.9185 3.5 15.25 3.5C15.5815 3.5 15.8995 3.6317 16.1339 3.86612C16.3683 4.10054 16.5 4.41848 16.5 4.75V4.75ZM10 2C7.526 2 7.122 2.007 5.971 2.058C5.187 2.095 4.661 2.2 4.173 2.39C3.739 2.558 3.426 2.759 3.093 3.093C2.78001 3.3954 2.53935 3.76458 2.389 4.173C2.199 4.663 2.094 5.188 2.058 5.971C2.006 7.075 2 7.461 2 10C2 12.474 2.007 12.878 2.058 14.029C2.095 14.812 2.2 15.339 2.389 15.826C2.559 16.261 2.759 16.574 3.091 16.906C3.428 17.242 3.741 17.443 4.171 17.609C4.665 17.8 5.191 17.906 5.971 17.942C7.075 17.994 7.461 18 10 18C12.474 18 12.878 17.993 14.029 17.942C14.811 17.905 15.338 17.8 15.826 17.611C16.259 17.442 16.574 17.241 16.906 16.909C17.243 16.572 17.444 16.259 17.61 15.829C17.8 15.336 17.906 14.809 17.942 14.029C17.994 12.925 18 12.539 18 10C18 7.526 17.993 7.122 17.942 5.971C17.905 5.189 17.8 4.661 17.61 4.173C17.4593 3.765 17.2191 3.39596 16.907 3.093C16.6047 2.77985 16.2355 2.53917 15.827 2.389C15.337 2.199 14.811 2.094 14.029 2.058C12.925 2.006 12.539 2 10 2ZM10 0C12.717 0 13.056 0.00999994 14.122 0.0599999C15.187 0.11 15.912 0.277 16.55 0.525C17.21 0.779 17.766 1.123 18.322 1.678C18.8305 2.1779 19.224 2.78259 19.475 3.45C19.722 4.087 19.89 4.813 19.94 5.878C19.987 6.944 20 7.283 20 10C20 12.717 19.99 13.056 19.94 14.122C19.89 15.187 19.722 15.912 19.475 16.55C19.2247 17.2178 18.8311 17.8226 18.322 18.322C17.822 18.8303 17.2173 19.2238 16.55 19.475C15.913 19.722 15.187 19.89 14.122 19.94C13.056 19.987 12.717 20 10 20C7.283 20 6.944 19.99 5.878 19.94C4.813 19.89 4.088 19.722 3.45 19.475C2.78233 19.2245 2.17753 18.8309 1.678 18.322C1.16941 17.8222 0.775931 17.2175 0.525 16.55C0.277 15.913 0.11 15.187 0.0599999 14.122C0.0129999 13.056 0 12.717 0 10C0 7.283 0.00999994 6.944 0.0599999 5.878C0.11 4.812 0.277 4.088 0.525 3.45C0.775236 2.78218 1.1688 2.17732 1.678 1.678C2.17767 1.16923 2.78243 0.775729 3.45 0.525C4.088 0.277 4.812 0.11 5.878 0.0599999C6.944 0.0129999 7.283 0 10 0Z" />
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="footer__item">
+								<h3 class="footer__item-title">ИНФОРМАЦИЯ</h3>
+								<ul class="footer__list">
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Доставка товара</a></li>
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Оплата товара</a></li>
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Возврат товара</a></li>
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Вопрос-ответ</a></li>
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Контакты</a></li>
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Наш Шоу-Рум</a></li>
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Карта сайта</a></li>
+								</ul>
+							</div>
+							<div class="footer__item">
+								<h3 class="footer__item-title">Каталог товара</h3>
+								<ul class="footer__list">
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Обои</a></li>
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Ламинат</a></li>
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Виниловый пол</a></li>
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Плинтус</a></li>
+									<li class="footer__list-item"><a class="footer__list-link" href="#">Акции</a></li>
+								</ul>
+							</div>
+							<div class="footer__item footer__item-contacts">
+								<h3 class="footer__item-title">Наши контакты</h3>
+								<div class="footer__item-inner">
+									<div class="footer__box">
+										<div class="footer__phone footer__box-element">
+											<h4 class="footer__phone-title footer__inner-title">Телефон:</h4>
+											<div class="footer__phone-wrap">
+												<a class="footer__phone-link " href="#">+38(095) 453-22-80</a>
+												<a class="footer__phone-link " href="#">+38(063) 323-90-34</a>
+												<a class="footer__phone-link " href="#">+38(095) 453-22-80</a>
+											</div>
+
+											<div class="social">
+												<a class="social__item social__item--phone" href="#">
+													<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7.78596 0.787489C7.27701 0.790406 6.76659 0.82103 6.2518 0.883739C5.26742 1.00478 4.2918 1.20603 3.35555 1.63624C1.86659 2.3202 0.810756 3.48103 0.504506 5.16832C0.374714 5.87999 0.269714 6.60186 0.209923 7.32811C0.0947142 8.73832 0.166172 10.1529 0.565756 11.5427C0.880756 12.6379 1.46117 13.6223 2.47763 14.261C2.90784 14.5308 3.47513 14.6621 3.77117 14.7992C3.8543 14.8385 3.87471 14.8619 3.87909 14.8677C3.88346 14.8721 3.89513 14.8823 3.89367 14.9698C3.88346 15.8623 3.89367 17.5889 3.89367 17.5889L3.89513 17.9608H4.56159L4.66951 17.8558C4.66951 17.8558 6.36263 16.2269 6.97513 15.556C7.08596 15.4364 7.14284 15.3694 7.15451 15.3621C7.16471 15.3548 7.14721 15.3504 7.26096 15.3475C8.06451 15.3314 8.86659 15.3008 9.66867 15.2571C10.726 15.1987 11.8037 15.0981 12.8405 14.665C13.7433 14.2873 14.4972 13.6704 14.9537 12.7458C15.4203 11.7979 15.6697 10.7931 15.763 9.75332C15.9176 8.02228 15.8637 6.28832 15.3853 4.57916C15.1039 3.57728 14.538 2.72999 13.6703 2.13207C12.632 1.41749 11.461 1.14916 10.3147 0.97853C9.64534 0.879364 8.97159 0.813739 8.29492 0.793322C8.12576 0.788947 7.95659 0.78603 7.78596 0.787489ZM8.27451 1.53999C8.91763 1.55749 9.56076 1.6202 10.2053 1.71645C11.3108 1.88124 12.3535 2.13207 13.2474 2.74749C13.9722 3.24624 14.4243 3.91999 14.6664 4.77895C15.1126 6.37728 15.1695 8.01499 15.0193 9.6877C14.9333 10.6517 14.7043 11.5602 14.2828 12.4162C13.911 13.1717 13.3305 13.6514 12.5518 13.9767C11.6476 14.3544 10.6647 14.455 9.6293 14.5119C8.83596 14.5556 8.04117 14.5848 7.24638 14.6008C7.04659 14.6052 6.85117 14.6577 6.71263 14.7598C6.57409 14.8619 6.51138 14.9567 6.42534 15.05C5.98784 15.5283 5.11576 16.3698 4.64034 16.8306C4.63742 16.2735 4.63305 15.5998 4.64034 14.9785C4.64326 14.7875 4.59951 14.5921 4.49013 14.4375C4.38076 14.2829 4.23055 14.1896 4.08617 14.1225C3.66471 13.9271 3.11346 13.7783 2.8743 13.6281C2.03867 13.1031 1.56471 12.3156 1.28326 11.3356C0.914297 10.0537 0.844297 8.73395 0.953672 7.39082C1.01201 6.69374 1.11263 5.9952 1.23951 5.30249C1.50492 3.8427 2.33909 2.92395 3.66617 2.31436C4.50471 1.92936 5.40013 1.73978 6.34367 1.62457C6.9868 1.54582 7.62992 1.52103 8.27451 1.53999ZM8.43201 3.40082C8.1243 3.40082 7.82534 3.43582 7.53513 3.49999C7.33534 3.54666 7.20846 3.74645 7.25367 3.9477C7.29888 4.14895 7.50013 4.27436 7.70138 4.22916C7.93617 4.1752 8.18117 4.14749 8.43201 4.14749C10.2549 4.14749 11.7249 5.61749 11.7249 7.43895C11.7249 7.69124 11.6972 7.93624 11.6433 8.17249C11.598 8.37228 11.7235 8.57353 11.9247 8.61874C12.126 8.66395 12.3258 8.53707 12.371 8.33582C12.4366 8.04707 12.4716 7.74811 12.4716 7.43895C12.4716 5.21353 10.6589 3.40082 8.43201 3.40082ZM4.70742 4.14895C4.64617 4.14603 4.58346 4.15041 4.51784 4.16499C3.83971 4.3152 3.16596 4.80666 3.14701 5.68457C3.16596 5.80707 3.16451 5.93832 3.20971 6.04916C3.43138 6.59166 3.62388 7.15166 3.90096 7.66499C5.24992 10.1587 7.29013 11.8927 9.89034 12.9937C10.201 13.125 10.5218 13.1527 10.8353 13.0214C11.267 12.8421 11.633 12.565 11.8766 12.1669C12.2105 11.62 12.2149 11.2408 11.6651 10.8369C11.3049 10.5714 10.9505 10.2987 10.586 10.0392C10.0303 9.64541 9.42951 9.57687 9.01534 10.2681C8.99346 10.3031 8.96138 10.3323 8.93367 10.3614C8.72076 10.5875 8.45971 10.6429 8.18263 10.5292C7.13117 10.096 6.31888 9.39749 5.82888 8.3577C5.54013 7.74666 5.61888 7.44041 6.15846 7.03353C6.21242 6.99416 6.26346 6.95186 6.31305 6.90666C6.5493 6.69082 6.61201 6.43416 6.47201 6.14395C6.15555 5.48186 5.73409 4.89124 5.20034 4.38228C5.05596 4.2452 4.89117 4.15916 4.70742 4.14895ZM8.42617 4.52082C8.26138 4.52082 8.09805 4.53395 7.93763 4.56166C7.80201 4.57916 7.6868 4.66957 7.63721 4.79645C7.58763 4.92478 7.61242 5.06916 7.69992 5.17416C7.78888 5.2777 7.92888 5.32582 8.06305 5.29666C8.17971 5.2777 8.30221 5.26749 8.42617 5.26749C9.63951 5.26749 10.6137 6.24166 10.6137 7.45499C10.6137 7.57895 10.6035 7.70145 10.5845 7.81811C10.5553 7.95228 10.6035 8.09228 10.707 8.18124C10.812 8.26874 10.9564 8.29353 11.0847 8.24395C11.2116 8.19436 11.302 8.07916 11.3195 7.94353C11.3472 7.78311 11.3603 7.61978 11.3603 7.45499C11.3603 5.83916 10.042 4.52082 8.42617 4.52082ZM8.37367 5.64082C8.23951 5.63936 8.11409 5.70936 8.04555 5.82603C7.97846 5.9427 7.97846 6.08561 8.04555 6.20228C8.11409 6.31895 8.23951 6.38895 8.37367 6.38749C8.99638 6.38749 9.49367 6.88478 9.49367 7.50749C9.49221 7.64166 9.56221 7.76707 9.67888 7.83561C9.79555 7.9027 9.93846 7.9027 10.0551 7.83561C10.1718 7.76707 10.2418 7.64166 10.2403 7.50749C10.2403 6.48082 9.40034 5.64082 8.37367 5.64082Z" />
+													</svg>
+
+												</a>
+												<a class="social__item social__item--phone" href="#">
+													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M4.30833 13.0513L4.87144 13.3803C5.82106 13.9342 6.90112 14.2249 8.00044 14.2227C9.23108 14.2227 10.4341 13.8577 11.4573 13.174C12.4806 12.4903 13.2781 11.5185 13.749 10.3816C14.22 9.24461 14.3432 7.99353 14.1031 6.78654C13.863 5.57955 13.2704 4.47085 12.4002 3.60066C11.53 2.73046 10.4213 2.13786 9.21434 1.89777C8.00735 1.65768 6.75627 1.78091 5.6193 2.25185C4.48234 2.7228 3.51056 3.52031 2.82686 4.54355C2.14315 5.56679 1.77822 6.76979 1.77822 8.00043C1.77822 9.11732 2.07144 10.1883 2.62133 11.1302L2.94956 11.6933L2.44167 13.5608L4.30833 13.0513ZM0.225778 15.7782L1.27733 11.9142C0.584441 10.7264 0.220408 9.37554 0.222667 8.00043C0.222667 3.70477 3.70478 0.222656 8.00044 0.222656C12.2961 0.222656 15.7782 3.70477 15.7782 8.00043C15.7782 12.2961 12.2961 15.7782 8.00044 15.7782C6.62594 15.7804 5.27562 15.4167 4.08822 14.7243L0.225778 15.7782ZM5.19344 4.3511C5.29767 4.34332 5.40267 4.34332 5.50689 4.34799C5.54889 4.3511 5.59089 4.35577 5.63289 4.36043C5.75656 4.37443 5.89267 4.44988 5.93856 4.5541C6.17033 5.07988 6.39589 5.60954 6.61367 6.14077C6.66189 6.25899 6.63311 6.41066 6.54133 6.55843C6.47821 6.65836 6.40994 6.75494 6.33678 6.84777C6.24889 6.96054 6.05989 7.16743 6.05989 7.16743C6.05989 7.16743 5.98289 7.25921 6.01244 7.37354C6.02333 7.4171 6.05911 7.4801 6.09178 7.53299L6.13767 7.60688C6.33678 7.93899 6.60433 8.27577 6.931 8.5931C7.02433 8.68332 7.11533 8.77588 7.21333 8.86221C7.57733 9.18343 7.98955 9.44554 8.43444 9.63999L8.43833 9.64154C8.50444 9.67032 8.53789 9.68588 8.63433 9.7271C8.68255 9.74732 8.73233 9.76521 8.78289 9.77843C8.83513 9.79174 8.89015 9.78923 8.94097 9.77123C8.99179 9.75323 9.03611 9.72055 9.06833 9.67732C9.63144 8.99521 9.68278 8.95088 9.68744 8.95088V8.95243C9.72656 8.91595 9.77304 8.88825 9.82375 8.87121C9.87446 8.85418 9.92823 8.84819 9.98144 8.85366C10.0281 8.85677 10.0756 8.86532 10.1191 8.88477C10.5321 9.07377 11.208 9.36854 11.208 9.36854L11.6607 9.57154C11.7369 9.6081 11.8061 9.69443 11.8084 9.77766C11.8116 9.82977 11.8162 9.91377 11.7983 10.0678C11.7734 10.2692 11.7128 10.5111 11.6521 10.6379C11.6106 10.7244 11.5554 10.8037 11.4888 10.8728C11.4103 10.9552 11.3244 11.0302 11.2321 11.0968C11.2002 11.1208 11.1678 11.1441 11.1349 11.1668C11.0381 11.2281 10.9388 11.2852 10.837 11.3379C10.6367 11.4442 10.4156 11.5053 10.1891 11.5168C10.0452 11.5245 9.90133 11.5354 9.75667 11.5277C9.75044 11.5277 9.31489 11.46 9.31489 11.46C8.20909 11.1691 7.18641 10.6242 6.32822 9.86866C6.15244 9.71388 5.98989 9.54743 5.82344 9.38177C5.13122 8.69343 4.60856 7.95066 4.29122 7.2491C4.1288 6.90477 4.04106 6.52997 4.03378 6.14932C4.03057 5.6771 4.18494 5.21729 4.47244 4.84266C4.52922 4.76955 4.58289 4.69332 4.67544 4.60543C4.77422 4.5121 4.83644 4.46232 4.90411 4.4281C4.99408 4.38301 5.09223 4.35656 5.19267 4.35032L5.19344 4.3511Z" />
+													</svg>
+
+												</a>
+												<a class="social__item social__item--phone" href="#">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 16C10.8565 16 12.637 15.2625 13.9497 13.9497C15.2625 12.637 16 10.8565 16 9C16 7.14348 15.2625 5.36301 13.9497 4.05025C12.637 2.7375 10.8565 2 9 2C7.14348 2 5.36301 2.7375 4.05025 4.05025C2.7375 5.36301 2 7.14348 2 9C2 10.8565 2.7375 12.637 4.05025 13.9497C5.36301 15.2625 7.14348 16 9 16ZM9 17.75C4.16738 17.75 0.25 13.8326 0.25 9C0.25 4.16738 4.16738 0.25 9 0.25C13.8326 0.25 17.75 4.16738 17.75 9C17.75 13.8326 13.8326 17.75 9 17.75ZM6.27875 10.0237L4.093 9.34212C3.6205 9.19775 3.61787 8.87225 4.19887 8.63862L12.7152 5.34862C13.2096 5.14737 13.4896 5.402 13.3295 6.03987L11.8796 12.8824C11.7781 13.3697 11.485 13.4861 11.0781 13.2612L8.846 11.6092L7.80562 12.6137C7.69887 12.717 7.61225 12.8054 7.44775 12.8272C7.28412 12.85 7.14937 12.801 7.0505 12.5297L6.28925 10.0176L6.27875 10.0237Z" />
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="footer__address footer__box-element">
+											<h4 class="footer__address-title footer__inner-title">Адрес:</h4>
+											<div class="footer__address-item footer__box-item">
+												<p class="footer__address-text footer__item-icon">
+													02148, Украина, г. Киев, ул. Академика Туполева, д. 54
+												</p>
+												<a class="footer__address-link" href="#">Посмотреть на карте</a>
+											</div>
+										</div>
+									</div>
+									<div class="footer__box">
+										<div class="footer__mail footer__box-element">
+											<h4 class="footer__mail-title footer__inner-title">Почта:</h4>
+											<div class="footer__mail-item footer__box-item">
+												<p class="footer__mail-text footer__item-icon">info@oboistyle.com.ua</p>
+												<a class="footer__mail-link" href="#">Написать нам</a>
+											</div>
+										</div>
+										<div class="footer__time-work footer__box-element">
+											<h4 class="footer__time-work-title footer__inner-title">Время работы:</h4>
+											<div class="footer__time-work-item footer__box-item">
+												<p class="footer__time-work-text footer__item-icon">
+													Пн-Пт: 9:00-19:00
+													Сб: 10:00-16:00
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="conteiner">
+						<div class="footer__bottom-inner">
+							<div data-da="._550-cards, 550, 4" class="footer__img-wrap">
+								<img class="footer__bottom-img" src="img/mcard.png">
+								<img class="footer__bottom-img" src="img/visa.png">
+							</div>
+							<span class="footer__copy">© 2008 - 2023 Все права защищены Компания Обои Стайл </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/app.min.js?_v=20230723210641"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js?_v=20230723210641"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js?_v=20230723210641"></script>
+	<script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js?_v=20230723210641"></script>
+	<script>
+
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,890 @@
+@media (max-width: 1400px) {
+    .registration-header.reg {
+        font-size: 17px;
+        padding: 10px 55px 12px 20px;
+    }
+
+    .enter {
+        font-size: 17px;
+    }
+
+    .forwho {
+        &__learn_more {
+            top: 42%;
+        }
+
+        &__investor {
+            &::after {
+                right: -120px;
+            }
+        }
+
+        &__crypt {
+            &::after {
+                right: -120px;
+            }
+        }
+
+        &__income {
+            margin-left: 20px;
+
+            &::after {
+                left: -140px;
+            }
+        }
+
+        &__newbie {
+            margin-left: 20px;
+
+            &::after {
+                left: -140px;
+            }
+        }
+
+        &__img {
+            &-ellipse {
+                right: 0;
+            }
+        }
+    }
+
+    .work {
+        &__text {
+            margin-bottom: 100px;
+            font-size: 30px;
+
+        }
+
+        &__rules {
+            font-size: 27px;
+            line-height: 34px;
+            max-width: 740px;
+
+        }
+
+        &__learn_more {
+            font-size: 24px;
+            line-height: 29px;
+            padding: 13px 75px 13px 30px;
+        }
+    }
+
+    .product__text {
+        font-size: 48px;
+    }
+
+    .faq {
+        &__qestion {
+            font-size: 29px;
+        }
+
+        &__text {
+            font-size: 20px;
+
+        }
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    .registration-header.reg {
+        font-size: 21px;
+    }
+
+    .enter-header {
+        font-size: 21px;
+    }
+
+    .mb-40 {
+        margin-bottom: 40px;
+    }
+
+    .forwho {
+        &__img {
+            &-ellipse {
+                right: -32px;
+            }
+        }
+    }
+
+    .arbitrage {
+        &__img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                margin-bottom: 50px;
+            }
+        }
+
+        &__learn-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .work {
+        &__text {
+            margin-bottom: 60px;
+            font-size: 27px;
+
+            span {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__rules {
+            font-size: 23px;
+            line-height: 28px;
+            max-width: 650px;
+
+        }
+
+        &__learn_more {
+            font-size: 22px;
+            line-height: 29px;
+            padding: 13px 65px 13px 20px;
+        }
+    }
+
+    .faq {
+        &__qestion {
+            font-size: 26px;
+        }
+
+        &__text {
+            font-size: 18px;
+
+        }
+    }
+
+
+
+    .footer {
+        &__reg {
+            a {
+                max-width: 260px;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 1070px) {
+    .offset-1.col-2 {
+        margin-left: -16px;
+    }
+
+    .graph-wrapper {
+        img {
+            top: -100px;
+        }
+    }
+
+}
+
+@media (max-width: 991.4px) {
+    .container {
+        max-width: 910px;
+    }
+
+    .registration-header,
+    .header__text-1,
+    .header__text-2,
+    .enter-header {
+        position: relative;
+        z-index: 7;
+    }
+
+    .ml-140 {
+        margin-left: 140px;
+
+    }
+
+    .graph-wrapper {
+        img {
+            top: -37px;
+        }
+    }
+
+    .hand-dollar {
+        // width: 380px;
+        right: 0;
+        bottom: 45px;
+    }
+
+    .last-month {
+        width: 160px;
+        right: 20px;
+        bottom: 200px;
+    }
+
+    .balance {
+        // width: 180px;
+        right: 230px;
+        bottom: 80px;
+    }
+
+    .navigation {
+        &::before {
+            right: 250px;
+        }
+
+        &::after {
+            top: -400px;
+            right: -25px;
+        }
+
+        ul {
+            &::after {
+                right: -50px;
+            }
+
+            li {
+                font-size: 16px;
+
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .forwho__img-ellipse {
+        display: none;
+    }
+
+    .forwho {
+        margin-bottom: 40px;
+
+        &__learn_more {
+            top: unset;
+            bottom: 0;
+            transform: translate(-50%, 0);
+
+        }
+
+        &__investor,
+        &__crypt,
+        &__income,
+        &__newbie {
+            margin-bottom: 80px;
+            height: auto;
+            margin-left: 0;
+
+            &::after {
+                right: unset;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -130px;
+            }
+        }
+    }
+
+
+
+    .arbitrage {
+        margin-bottom: 50px;
+
+        &__text {
+            font-size: 29px;
+            line-height: 35px;
+
+            span {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .product__text {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .num-01 {
+        width: 149px !important;
+    }
+
+    .num-05 {
+        width: 186px !important;
+    }
+
+    .work {
+        margin-bottom: 50px;
+
+        &__text {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 50px;
+        }
+
+        &__reg {
+            width: 200px !important;
+            bottom: 135px;
+            left: 0;
+        }
+
+        &__line {
+            max-height: 1600px;
+            width: 81px;
+            left: 18px;
+        }
+
+        &__img-num {
+            width: 186px;
+        }
+
+        &__footer {
+            margin-top: 30px;
+        }
+
+        &__rules {
+            font-size: 19px;
+            line-height: 23px;
+            max-width: 550px;
+        }
+    }
+
+    .faq {
+        &__title-img {
+            margin-bottom: 50px;
+        }
+
+        &__box {
+            padding: 20px 54px 23px 38px;
+
+        }
+    }
+
+    .footer {
+        position: relative;
+        padding-bottom: 90px;
+
+        &-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__col-1 {
+            align-items: center;
+        }
+
+        &__col-2 {
+            display: flex;
+            align-items: center;
+        }
+
+        &__nav {
+            margin-bottom: 20px;
+            margin-left: -80px;
+
+            ul {
+                padding-left: 0;
+            }
+        }
+
+        &__contacts {
+            margin-bottom: 150px;
+        }
+
+        &__go-top {
+            position: absolute;
+            bottom: 20px;
+        }
+
+        &__enter {
+            position: absolute;
+            bottom: 180px;
+        }
+
+        &__reg {
+            position: absolute;
+            bottom: 250px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .work__reg {
+        bottom: 200px;
+    }
+
+
+}
+
+@media (max-width: 850px) {
+    .header {
+        &__title {
+            h1 {
+                font-size: 30px;
+
+                span {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &__text-1 {
+            margin-bottom: 30px;
+        }
+    }
+
+    .forwho {
+        &__text {
+            font-size: 25px;
+        }
+
+        &__learn_more {
+            line-height: 25px;
+        }
+    }
+
+    .product {
+        &__text {
+            font-size: 30px;
+            line-height: 37px;
+        }
+
+        &__learn_more {
+            width: 280px;
+            font-size: 23px;
+            line-height: 31px;
+        }
+    }
+
+    .arbitrage {
+        &__text {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        &__learn_more {
+            font-size: 23px;
+            line-height: 31px;
+        }
+    }
+
+    .work {
+        &__text {
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        &__reg {
+            bottom: 135px;
+            left: 0;
+        }
+
+        &__rules {
+            font-size: 18px;
+            line-height: 20px;
+            max-width: 520px;
+        }
+
+        &__learn_more {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    .faq {
+        &__box {
+            padding: 17px 52px 17px 38px;
+        }
+
+        &__qestion {
+            font-size: 21px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width: 793.4px) {
+    .work__reg {
+        bottom: 200px;
+    }
+}
+
+@media (max-width: 768.4px) {
+    .header {
+        margin-bottom: -20px;
+
+        &__text-1,
+        &__text-2 {
+            font-size: 19px;
+            line-height: 21px;
+        }
+
+        &__title {
+            h1 {
+                span {
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    .registration-header.reg {
+        font-size: 18px;
+    }
+
+    .enter-header {
+        font-size: 19px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .graph-wrapper img {
+        top: -90px;
+    }
+
+    .hand-dollar {
+        width: 380px;
+        right: 30px;
+        bottom: 45px;
+    }
+
+    .last-month {
+        width: 140px;
+        right: 40px;
+        bottom: 200px;
+    }
+
+    .balance {
+        width: 230px;
+        right: 30px;
+        bottom: 490px;
+    }
+
+    .arbitrage__title-img {
+        margin-bottom: 40px;
+    }
+
+    .num-01 {
+        width: 128px !important;
+    }
+
+    .work__img-num {
+        width: 158px;
+    }
+
+    .num-05 {
+        width: 158px !important;
+    }
+
+    .work__line {
+        max-height: 1600px;
+        width: 68px;
+        left: 17px;
+    }
+
+    .work__text {
+        font-size: 21px;
+        line-height: 23px;
+        margin-bottom: 30px;
+    }
+
+    .work {
+        &__title-img {
+            margin-bottom: 40px;
+        }
+
+        &__img-reg {
+            position: unset;
+        }
+
+        &__reg {
+            width: 230px !important;
+            bottom: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__rules {
+            font-size: 18px;
+            line-height: 20px;
+            max-width: 520px;
+        }
+
+        &__learn_more {
+            font-size: 18px;
+            line-height: 25px;
+            margin-top: 20px;
+        }
+
+        &__footer {
+            margin-top: 140px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .faq {
+        &__box {
+            padding: 17px 25px 17px 25px;
+        }
+
+        &__qestion {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        margin-bottom: -40px;
+
+        &__title {
+            h1 {
+                font-size: 28px;
+                line-height: 31px;
+            }
+
+        }
+    }
+
+    .hand-dollar {
+        width: 330px;
+    }
+
+    .graph-wrapper img {
+        top: -18px;
+    }
+
+    .balance {
+        width: 180px;
+    }
+
+    .num-01 {
+        width: 128px !important;
+    }
+
+    .work__img-num {
+        width: 158px;
+    }
+
+    .num-05 {
+        width: 158px !important;
+    }
+
+    .work__line {
+        max-height: 1600px;
+        width: 68px;
+        left: 17px;
+    }
+
+    .work__text {
+        font-size: 21px;
+        line-height: 21px;
+        margin-bottom: 30px;
+    }
+
+    .product__text {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .arbitrage__text {
+        font-size: 23px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 600px) {
+    .work__text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 578px) {
+    .forwho__title-img {
+        margin-bottom: 35px;
+    }
+
+    .ml-140 {
+        margin-left: 60px;
+    }
+
+    .forwho__text {
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .forwho__investor {
+        &::after {
+            content: url(../images/investor-sm.svg);
+            margin-left: 60px;
+        }
+    }
+
+    .forwho__crypt {
+        &::after {
+            content: url(../images/crypt-sm.svg);
+            margin-left: 60px;
+
+        }
+
+    }
+
+    .forwho__income {
+        &::after {
+            content: url(../images/income-sm.svg);
+            margin-left: 60px;
+
+        }
+
+    }
+
+    .forwho__newbie {
+        margin-bottom: 70px;
+
+        &::after {
+            content: url(../images/newbie-sm.svg);
+            margin-left: 60px;
+
+        }
+
+    }
+
+    .work {
+        & .col-9 {
+            width: 100%;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__footer {
+            margin-top: 0;
+        }
+
+    }
+
+    .faq details[open]::after {
+        width: 7px;
+    }
+
+    .faq {
+        &__box {
+            padding: 10px 20px 10px 15px;
+        }
+
+        &__qestion {
+            font-size: 15px;
+            line-height: 17px;
+
+            img {
+                margin-left: 15px;
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
+
+@media (max-width: 578px) {
+    .balance {
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 425.7px) {
+    .col-8.col-xl-4 {
+        width: 100%;
+    }
+
+    .header__title h1 {
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+    .header__text-2 {
+        margin-bottom: 45px;
+    }
+
+    .mt-290 {
+        margin-top: 200px;
+    }
+
+    .hand-dollar {
+        width: 260px;
+        bottom: 45px;
+        right: 0;
+    }
+
+    .last-month {
+        bottom: 175px;
+        right: 20px;
+        width: 100px;
+    }
+
+    .balance {
+        bottom: 45px;
+        right: 20px;
+        width: 130px;
+    }
+
+    .graph-wrapper {
+        display: none;
+    }
+
+    .product {
+        margin-bottom: 80px;
+
+        &__title-img {
+            margin-bottom: 10px;
+        }
+
+        &__card-img {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+
+    .arbitrage {
+        margin-bottom: 30px;
+        &__title-img {
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+    .work{
+        margin-bottom: 30px;
+
+        &__title-img{
+            margin-bottom: 20px;
+        }
+        &__text span {
+            margin-bottom: 10px;
+        }
+        &__rules{
+            padding: 8px 15px 8px 20px;
+        }
+    }
+    .faq{
+        display: none;
+    }
+}
