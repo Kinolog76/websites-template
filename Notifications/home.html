@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="vladjik_p">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Напоминания</title>
+</head>
+
+<body>
+  <main class="cases">
+    <div class="container">
+      <div class="top__box">
+        <div class="title"><a href="#"><img src="img/back_btn.svg" alt=""></a>
+          <p>Дела!!</p>
+        </div>
+        <a href="new-case.html" class="add__btn"><img src="img/plus.svg" alt="">Добавить</a>
+      </div>
+      <div class="dates">
+        <div class="dates__top">
+          <div class="dates__top-date">
+            <p>Сегодня</p>
+            <span class="current date">18 Августа, 2023</span>
+          </div>
+          <button class="redact-list__btn"><img src="img/redact_pencil.svg" alt=""></button>
+        </div>
+        <div class="dates__date-wrapper">
+          <div class="date__box date_active">
+            <span class="day">Пт</span>
+            <span class="day-date">18</span>
+          </div>
+          <div class="date__box">
+            <span class="day">Сб</span>
+            <span class="day-date">19</span>
+          </div>
+          <div class="date__box">
+            <span class="day">Вс</span>
+            <span class="day-date">20</span>
+          </div>
+          <div class="date__box">
+            <span class="day">Пн</span>
+            <span class="day-date">21</span>
+          </div>
+          <div class="date__box">
+            <span class="day">Вт</span>
+            <span class="day-date">22</span>
+          </div>
+          <div class="date__box">
+            <span class="day">Чт</span>
+            <span class="day-date">23</span>
+          </div>
+          <div class="date__box">
+            <span class="day">Пт</span>
+            <span class="day-date">24</span>
+          </div>
+          <div class="date__box">
+            <span class="day">Сб</span>
+            <span class="day-date">25</span>
+          </div>
+          <div class="date__box">
+            <span class="day">Вс</span>
+            <span class="day-date">26</span>
+          </div>
+        </div>
+        <div class="dates__tasks active">
+          <div class="tabs__box">
+            <button class="scheduled tab_active">Запланировано</button>
+            <button class="done">Выполнено</button>
+          </div>
+          <div class="tasks__container">
+            <div class="tasks__wrapper active">
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">9:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check1" type="checkbox">
+                      <label for="check1"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Васильев О.Д.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check2" type="checkbox">
+                      <label for="check2"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Карасик А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">10:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check4" type="checkbox">
+                      <label for="check4"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">11:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check5" type="checkbox">
+                      <label for="check5"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-other">Другое</span>
+                      <span class="surname">Василёк А.А.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">13:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check6" type="checkbox">
+                      <label for="check6"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-meeting">Договориться о встрече</span>
+                      <span class="surname">Курочкин С.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check7" type="checkbox">
+                      <label for="check7"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-message">Отправить сообщение</span>
+                      <span class="surname">Пташкина А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">14:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="done__wrapper">
+              <div class="task__case">
+                <div class="case__wrapper">
+                  <span class="task_name task-call">Позвонить</span>
+                  <span class="surname">Васильев О.Д.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dates__tasks">
+          <div class="tabs__box">
+            <button class="scheduled tab_active">Запланировано</button>
+            <button class="done">Выполнено</button>
+          </div>
+          <div class="tasks__container">
+            <div class="tasks__wrapper active">
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">9:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check6" type="checkbox">
+                      <label for="check6"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-meeting">Договориться о встрече</span>
+                      <span class="surname">Курочкин С.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check7" type="checkbox">
+                      <label for="check7"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-message">Отправить сообщение</span>
+                      <span class="surname">Пташкина А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">10:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check4" type="checkbox">
+                      <label for="check4"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">11:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check5" type="checkbox">
+                      <label for="check5"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-other">Другое</span>
+                      <span class="surname">Василёк А.А.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">13:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check6" type="checkbox">
+                      <label for="check6"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-meeting">Договориться о встрече</span>
+                      <span class="surname">Курочкин С.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check7" type="checkbox">
+                      <label for="check7"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-message">Отправить сообщение</span>
+                      <span class="surname">Пташкина А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">14:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="done__wrapper">
+              <div class="task__case">
+                <div class="case__wrapper">
+                  <span class="task_name task-call">Позвонить</span>
+                  <span class="surname">Васильев О.Д.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dates__tasks">
+          <div class="tabs__box">
+            <button class="scheduled tab_active">Запланировано</button>
+            <button class="done">Выполнено</button>
+          </div>
+          <div class="tasks__container">
+            <div class="tasks__wrapper active">
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">9:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check1" type="checkbox">
+                      <label for="check1"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Васильев О.Д.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check2" type="checkbox">
+                      <label for="check2"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Карасик А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">10:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check4" type="checkbox">
+                      <label for="check4"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">11:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check5" type="checkbox">
+                      <label for="check5"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-other">Другое</span>
+                      <span class="surname">Василёк А.А.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">13:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check6" type="checkbox">
+                      <label for="check6"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-meeting">Договориться о встрече</span>
+                      <span class="surname">Курочкин С.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check7" type="checkbox">
+                      <label for="check7"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-message">Отправить сообщение</span>
+                      <span class="surname">Пташкина А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">14:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="done__wrapper">
+              <div class="task__case">
+                <div class="case__wrapper">
+                  <span class="task_name task-call">Позвонить</span>
+                  <span class="surname">Васильев О.Д.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dates__tasks">
+          <div class="tabs__box">
+            <button class="scheduled tab_active">Запланировано</button>
+            <button class="done">Выполнено</button>
+          </div>
+          <div class="tasks__container">
+            <div class="tasks__wrapper active">
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">9:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check1" type="checkbox">
+                      <label for="check1"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Васильев О.Д.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">10:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check4" type="checkbox">
+                      <label for="check4"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">11:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check5" type="checkbox">
+                      <label for="check5"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-other">Другое</span>
+                      <span class="surname">Василёк А.А.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">13:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check6" type="checkbox">
+                      <label for="check6"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-meeting">Договориться о встрече</span>
+                      <span class="surname">Курочкин С.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check7" type="checkbox">
+                      <label for="check7"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-message">Отправить сообщение</span>
+                      <span class="surname">Пташкина А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">14:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="done__wrapper">
+              <div class="task__case">
+                <div class="case__wrapper">
+                  <span class="task_name task-call">Позвонить</span>
+                  <span class="surname">Васильев О.Д.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dates__tasks">
+          <div class="tabs__box">
+            <button class="scheduled tab_active">Запланировано</button>
+            <button class="done">Выполнено</button>
+          </div>
+          <div class="tasks__container">
+            <div class="tasks__wrapper active">
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">9:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check1" type="checkbox">
+                      <label for="check1"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Васильев О.Д.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check2" type="checkbox">
+                      <label for="check2"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Карасик А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">10:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check4" type="checkbox">
+                      <label for="check4"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">11:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check5" type="checkbox">
+                      <label for="check5"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-other">Другое</span>
+                      <span class="surname">Василёк А.А.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">13:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check6" type="checkbox">
+                      <label for="check6"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-meeting">Договориться о встрече</span>
+                      <span class="surname">Курочкин С.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check7" type="checkbox">
+                      <label for="check7"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-message">Отправить сообщение</span>
+                      <span class="surname">Пташкина А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">14:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="done__wrapper">
+              <div class="task__case">
+                <div class="case__wrapper">
+                  <span class="task_name task-call">Позвонить</span>
+                  <span class="surname">Васильев О.Д.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dates__tasks">
+          <div class="tabs__box">
+            <button class="scheduled tab_active">Запланировано</button>
+            <button class="done">Выполнено</button>
+          </div>
+          <div class="tasks__container">
+            <div class="tasks__wrapper active">
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">9:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check1" type="checkbox">
+                      <label for="check1"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Васильев О.Д.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check2" type="checkbox">
+                      <label for="check2"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Карасик А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">10:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check4" type="checkbox">
+                      <label for="check4"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">11:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check5" type="checkbox">
+                      <label for="check5"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-other">Другое</span>
+                      <span class="surname">Василёк А.А.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">13:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check6" type="checkbox">
+                      <label for="check6"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-meeting">Договориться о встрече</span>
+                      <span class="surname">Курочкин С.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check7" type="checkbox">
+                      <label for="check7"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-message">Отправить сообщение</span>
+                      <span class="surname">Пташкина А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">14:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="done__wrapper">
+              <div class="task__case">
+                <div class="case__wrapper">
+                  <span class="task_name task-call">Позвонить</span>
+                  <span class="surname">Васильев О.Д.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dates__tasks">
+          <div class="tabs__box">
+            <button class="scheduled tab_active">Запланировано</button>
+            <button class="done">Выполнено</button>
+          </div>
+          <div class="tasks__container">
+            <div class="tasks__wrapper active">
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">9:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check1" type="checkbox">
+                      <label for="check1"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Васильев О.Д.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check2" type="checkbox">
+                      <label for="check2"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Карасик А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">10:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check4" type="checkbox">
+                      <label for="check4"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">11:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check5" type="checkbox">
+                      <label for="check5"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-other">Другое</span>
+                      <span class="surname">Василёк А.А.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">13:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check6" type="checkbox">
+                      <label for="check6"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-meeting">Договориться о встрече</span>
+                      <span class="surname">Курочкин С.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check7" type="checkbox">
+                      <label for="check7"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-message">Отправить сообщение</span>
+                      <span class="surname">Пташкина А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">14:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="done__wrapper">
+              <div class="task__case">
+                <div class="case__wrapper">
+                  <span class="task_name task-call">Позвонить</span>
+                  <span class="surname">Васильев О.Д.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dates__tasks">
+          <div class="tabs__box">
+            <button class="scheduled tab_active">Запланировано</button>
+            <button class="done">Выполнено</button>
+          </div>
+          <div class="tasks__container">
+            <div class="tasks__wrapper active">
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">9:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Василёк Н.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">10:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check4" type="checkbox">
+                      <label for="check4"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">11:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check5" type="checkbox">
+                      <label for="check5"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-other">Другое</span>
+                      <span class="surname">Василёк А.А.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">13:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check6" type="checkbox">
+                      <label for="check6"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-meeting">Договориться о встрече</span>
+                      <span class="surname">Курочкин С.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check7" type="checkbox">
+                      <label for="check7"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-message">Отправить сообщение</span>
+                      <span class="surname">Пташкина А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">14:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="done__wrapper">
+              <div class="task__case">
+                <div class="case__wrapper">
+                  <span class="task_name task-call">Позвонить</span>
+                  <span class="surname">Васильев О.Д.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dates__tasks">
+          <div class="tabs__box">
+            <button class="scheduled tab_active">Запланировано</button>
+            <button class="done">Выполнено</button>
+          </div>
+          <div class="tasks__container">
+            <div class="tasks__wrapper active">
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">9:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check1" type="checkbox">
+                      <label for="check1"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Васильев О.Д.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check2" type="checkbox">
+                      <label for="check2"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Карасик А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">10:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check3" type="checkbox">
+                      <label for="check3"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-pay">Оплатить счет</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check4" type="checkbox">
+                      <label for="check4"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-documents">Отправить документы</span>
+                      <span class="surname">Петрушкин Н.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">11:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check5" type="checkbox">
+                      <label for="check5"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-other">Другое</span>
+                      <span class="surname">Василёк А.А.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">13:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check6" type="checkbox">
+                      <label for="check6"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-meeting">Договориться о встрече</span>
+                      <span class="surname">Курочкин С.П.</span>
+                    </div>
+                  </a>
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check7" type="checkbox">
+                      <label for="check7"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-message">Отправить сообщение</span>
+                      <span class="surname">Пташкина А.П.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="task__box task">
+                <div class="task__time-box"><span class="task__time">14:00</span></div>
+                <div class="task__cases">
+                  <a href="redactor.html" class="task__case">
+                    <div class="check_wrapper">
+                      <input class="case__input" id="check8" type="checkbox">
+                      <label for="check8"></label>
+                    </div>
+                    <div class="case__wrapper">
+                      <span class="task_name task-call">Позвонить</span>
+                      <span class="surname">Олесин П.Д.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="done__wrapper">
+              <div class="task__case">
+                <div class="case__wrapper">
+                  <span class="task_name task-call">Позвонить</span>
+                  <span class="surname">Васильев О.Д.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

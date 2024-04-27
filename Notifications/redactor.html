@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="vladjik_p">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Напоминания</title>
+</head>
+
+<body>
+  <main class="new redact">
+    <div class="container">
+      <div class="top__box">
+        <div class="title"><a href="home.html"><img src="img/back_btn.svg" alt=""></a>
+          <p>Редактор</p>
+        </div>
+      </div>
+      <form>
+        <div class="content">
+          <div class="text-box">
+            <label for="caseText">Комментарий</label>
+            <textarea id="caseText" placeholder="Введите текст напоминания" rows="3">Отправить документы Соколову, к договору прикрепить приложение и соглашение о неразглашении.</textarea>
+          </div>
+          <div class="add-file">
+            <p class="add-file__title">Файл</p>
+            <div class="add-file_box">
+              <a href="" class="file-xls"><img src="img/file_xls.svg" alt=""></a>
+              <a href="" class="file-ppf"><img src="img/file_ppt.svg" alt=""></a>
+              <a href="" class="file-photo"><img src="img/file_photo.svg" alt=""></a>
+              <input type="file" id="fileUpload" name="uploadedFile">
+            </div>
+          </div>
+          <div class="calendar-box">
+            <div class="calendar-date">
+              <label for="calendarDate">Дата</label>
+              <input type="text" id="calendarDate">
+            </div>
+            <div class="calendar-input">
+              <label for="calendarInput"></label>
+              <input type="date" id="calendarInput">
+            </div>
+            <div class="calendar-time">
+              <label for="calendarTime">Время</label>
+              <input type="text" id="calendarTime">
+            </div>
+          </div>
+          <div class="case-type">
+            <div class="case-type__title">Тип дела</div>
+            <div class="case-type__box"><span class="case-type__selected documents"></span><img src="img/arrow-right.svg" alt=""></div>
+          </div>
+          <div class="employee-box">
+            <div class="case-type__title">Сотрудник</div>
+            <div class="emp-type__box">
+              <div class="emp__selected-box">
+                <img class="emp__selected-img" src="img/person.svg" alt="">
+                <span class="emp__selected">Петрушкин Н.П.</span>
+              </div>
+              <img src="img/arrow-right.svg" alt="">
+            </div>
+          </div>
+          <div class="reminder rm">
+            <div class="rm__title">Напоминания</div>
+            <div class="rm__select_box">
+              <span class="rm__text">1-е напоминание</span>
+              <div class="rm__select_value">
+                <span class="reminder-value">Нет</span>
+                <img src="img/arrow-right.svg" alt="">
+              </div>
+              <ul class="rm__dropdown">
+                <li>Нет</li>
+                <li>В момент события</li>
+                <li>За 5 минут</li>
+                <li>За 30 минут</li>
+                <li>За 1 час</li>
+                <li>За 2 часа</li>
+                <li class="selected">За 1 день</li>
+                <li>За 2 дня</li>
+                <li>За неделю</li>
+              </ul>
+            </div>
+            <div class="rm__select_box new-select-box">
+              <span class="rm__text">2-е напоминание</span>
+              <div class="rm__select_value">
+                <span class="reminder-value">Нет</span>
+                <img src="img/arrow-right.svg" alt="">
+              </div>
+              <ul class="rm__dropdown dd2">
+                <li>Нет</li>
+                <li>В момент события</li>
+                <li>За 5 минут</li>
+                <li>За 30 минут</li>
+                <li>За 1 час</li>
+                <li>За 2 часа</li>
+                <li>За 1 день</li>
+                <li>За 2 дня</li>
+                <li>За неделю</li>
+              </ul>
+            </div>
+            <div class="rm__select_box new-select-box">
+              <span class="rm__text">3-е напоминание</span>
+              <div class="rm__select_value">
+                <span class="reminder-value">Нет</span>
+                <img src="img/arrow-right.svg" alt="">
+              </div>
+              <ul class="rm__dropdown dd3">
+                <li>Нет</li>
+                <li>В момент события</li>
+                <li>За 5 минут</li>
+                <li>За 30 минут</li>
+                <li>За 1 час</li>
+                <li>За 2 часа</li>
+                <li>За 1 день</li>
+                <li>За 2 дня</li>
+                <li>За неделю</li>
+              </ul>
+            </div>
+            <div class="rm__select_box new-select-box">
+              <span class="rm__text">4-е напоминание</span>
+              <div class="rm__select_value">
+                <span class="reminder-value">Нет</span>
+                <img src="img/arrow-right.svg" alt="">
+              </div>
+              <ul class="rm__dropdown dd4">
+                <li>Нет</li>
+                <li>В момент события</li>
+                <li>За 5 минут</li>
+                <li>За 30 минут</li>
+                <li>За 1 час</li>
+                <li>За 2 часа</li>
+                <li>За 1 день</li>
+                <li>За 2 дня</li>
+                <li>За неделю</li>
+              </ul>
+            </div>
+            <div class="rm__add_box">
+              <div class="rm__add"><img src="img/add-file.svg" alt="">
+                <p>Добавить</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-save_box">
+          <button class="button-delete">Удалить</button>
+          <button class="button-save">Сохранить</button>
+        </div>
+      </form>
+      <div class="case-type__popup ctp">
+        <div class="top__box">
+          <div class="title"><button class="ctp__close"><img src="img/back_btn.svg" alt=""></button>
+            <p>Тип дела</p>
+          </div>
+        </div>
+        <div class="ctp-list">
+          <div data-value="documents" class="ctp-item documents">Отправить документы</div>
+          <div data-value="message" class="ctp-item message">Отправить сообщение</div>
+          <div data-value="pay" class="ctp-item pay">Оплатить счет</div>
+          <div data-value="meeting" class="ctp-item meeting">Договориться о встрече</div>
+          <div data-value="call" class="ctp-item call">Позвонить</div>
+          <div data-value="other" class="ctp-item other">Другое</div>
+        </div>
+      </div>
+      <div class="employee__popup emp">
+        <div class="top__box">
+          <div class="title"><button class="emp__close"><img src="img/back_btn.svg" alt=""></button>
+            <p>Сотрудники</p>
+          </div>
+        </div>
+        <div class="emp_find">
+          <label for="empFIO">Найти:</label>
+          <input id="empFIO" type="text">
+        </div>
+        <div class="emp-list">
+          <div data-value="Арбузова И.Ф." class="emp-item">
+            <div class="emp-img"> <img src="img/employee_1.png" alt=""></div>
+            <div class="emp-descr">
+              <span class="emp-fio">Арбузова Ирина</span>
+              <span class="emp-post">Менеджер по продажам</span>
+            </div>
+          </div>
+          <div data-value="Петрушкин Н.П." class="emp-item">
+            <div class="emp-img">
+              <img src="img/employee_2.png" alt="">
+            </div>
+            <div class="emp-descr">
+              <span class="emp-fio">Петрушкин Николай</span>
+              <span class="emp-post">Менеджер по продажам</span>
+            </div>
+          </div>
+          <div data-value="Василёк А.Ю." class="emp-item ">
+            <div class="emp-img"> <img src="img/employee_3.png" alt=""></div>
+            <div class="emp-descr">
+              <span class="emp-fio">Василёк Андрей</span>
+              <span class="emp-post">Стажёр</span>
+            </div>
+          </div>
+          <div data-value="Грязнова А.И." class="emp-item ">
+            <div class="emp-img"> <img src="img/employee_4.png" alt=""></div>
+            <div class="emp-descr">
+              <span class="emp-fio">Грязнова Анна</span>
+              <span class="emp-post">Директор отдела закупок</span>
+            </div>
+          </div>
+          <div data-value="Василёк А.Ю." class="emp-item ">
+            <div class="emp-img"> <img src="img/employee_3.png" alt=""></div>
+            <div class="emp-descr">
+              <span class="emp-fio">Василёк Андрей</span>
+              <span class="emp-post">Стажёр</span>
+            </div>
+          </div>
+          <div data-value="Грязнова А.И." class="emp-item ">
+            <div class="emp-img"> <img src="img/employee_4.png" alt=""></div>
+            <div class="emp-descr">
+              <span class="emp-fio">Грязнова Анна</span>
+              <span class="emp-post">Директор отдела закупок</span>
+            </div>
+          </div>
+          <div data-value="Дроботенко С.Л." class="emp-item ">
+            <div class="emp-img"> <img src="img/employee_5.png" alt=""></div>
+            <div class="emp-descr">
+              <span class="emp-fio">Дроботенко Сергей</span>
+              <span class="emp-post">Менеджер по продажам</span>
+            </div>
+          </div>
+          <div data-value="Дробыш Т.В." class="emp-item ">
+            <div class="emp-img"> <img src="img/employee_6.png" alt=""></div>
+            <div class="emp-descr">
+              <span class="emp-fio">Дробыш Тамара</span>
+              <span class="emp-post">Руководитель отдела продаж</span>
+            </div>
+          </div>
+          <div data-value="Грязнова А.И." class="emp-item ">
+            <div class="emp-img"> <img src="img/employee_4.png" alt=""></div>
+            <div class="emp-descr">
+              <span class="emp-fio">Грязнова Анна</span>
+              <span class="emp-post">Директор отдела закупок</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
