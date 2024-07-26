@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM Dashboard Customers</title>
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+  <main class="main main__container">
+    <a class="main__logo logo" href="#">
+      <img class="logo__img" src="./assets/img/logo.svg" alt="logo">
+      <div class="logo__title">Dashboard <span class="logo__version">v.01</span></div>
+    </a>
+    <button class="btn-toggle-menu">
+      <img class="btn-toggle-menu__open" src="./assets/img/other/menu-open.svg" alt="Menu open">
+      <img class="btn-toggle-menu__close" src="./assets/img/other/menu-close.svg" alt="Menu close">
+    </button>
+    <aside id="side" class="side">
+      <a class="logo" href="#">
+        <img class="logo__img" src="./assets/img/logo.svg" alt="logo">
+        <div class="logo__title">Dashboard <span class="logo__version">v.01</span></div>
+      </a>
+      <div class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link ">
+              <img class="menu__icon" src="./assets/img/side/dashboard.svg" alt="Dashboard">
+              <span class="menu__title">Dashboard</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item-has-child">
+            <a href="#" class="menu__link ">
+              <img class="menu__icon" src="./assets/img/side/product.svg" alt="Product">
+              <span class="menu__title">Product</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item-active menu__item-has-child">
+            <a href="#" class="menu__link">
+              <span class="menu__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.0006 22.7498H9.00063C7.68063 22.7498 6.58063 22.6198 5.65063 22.3398C5.31063 22.2398 5.09063 21.9098 5.11063 21.5598C5.36063 18.5698 8.39063 16.2197 12.0006 16.2197C15.6106 16.2197 18.6306 18.5598 18.8906 21.5598C18.9206 21.9198 18.7006 22.2398 18.3506 22.3398C17.4206 22.6198 16.3206 22.7498 15.0006 22.7498ZM6.72063 21.0598C7.38063 21.1898 8.13063 21.2498 9.00063 21.2498H15.0006C15.8706 21.2498 16.6206 21.1898 17.2806 21.0598C16.7506 19.1398 14.5606 17.7197 12.0006 17.7197C9.44063 17.7197 7.25063 19.1398 6.72063 21.0598Z" fill="#fff" stroke="#9197B3" />
+                  <path d="M15 2H9C4 2 2 4 2 9V15C2 18.78 3.14 20.85 5.86 21.62C6.08 19.02 8.75 16.97 12 16.97C15.25 16.97 17.92 19.02 18.14 21.62C20.86 20.85 22 18.78 22 15V9C22 4 20 2 15 2ZM12 14.17C10.02 14.17 8.42 12.56 8.42 10.58C8.42 8.60002 10.02 7 12 7C13.98 7 15.58 8.60002 15.58 10.58C15.58 12.56 13.98 14.17 12 14.17Z" stroke-width="2" stroke="#9197B3" />
+                  <path d="M11.9999 14.92C9.60992 14.92 7.66992 12.97 7.66992 10.58C7.66992 8.19002 9.60992 6.25 11.9999 6.25C14.3899 6.25 16.3299 8.19002 16.3299 10.58C16.3299 12.97 14.3899 14.92 11.9999 14.92ZM11.9999 7.75C10.4399 7.75 9.16992 9.02002 9.16992 10.58C9.16992 12.15 10.4399 13.42 11.9999 13.42C13.5599 13.42 14.8299 12.15 14.8299 10.58C14.8299 9.02002 13.5599 7.75 11.9999 7.75Z" stroke="#9197B3" />
+                </svg>
+              </span>
+              <span class="menu__title">Customers</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item-has-child">
+            <a href="#" class="menu__link ">
+              <img class="menu__icon" src="./assets/img/side/income.svg" alt="Income">
+              <span class="menu__title">Income</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item-has-child">
+            <a href="#" class="menu__link ">
+              <img class="menu__icon" src="./assets/img/side/promote.svg" alt="Promote">
+              <span class="menu__title">Promote</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item-has-child">
+            <a href="#" class="menu__link ">
+              <img class="menu__icon" src="./assets/img/side/help.svg" alt="Help">
+              <span class="menu__title">Help</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="user">
+        <img class="user__avatar" src="./assets/img/avatar.png" alt="Evano">
+        <div class="user__info">
+          <div class="user__name">Evano</div>
+          <div class="user__post">Project Manager</div>
+        </div>
+      </a>
+    </aside>
+    <section id="info" class="info">
+      <div class="info__greetings info__greetings-margin-bottom">Hello Evano 👋🏼,</div>
+      <div class="desk">
+        <div class="desk__top desk__top-margin-bottom">
+          <div class="desk__top_left">
+            <h1>All Customers</h1>
+            <span class="desk__members_status">Active Members</span>
+          </div>
+          <div class="desk__top_right">
+            <img src="./assets/img/other/search.svg" alt="Search">
+            <input type="text" class="desk__top_right-input" placeholder="Search">
+          </div>
+        </div>
+        <div class="desk__table_wrapper">
+          <table class="desk__table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td><span class="status status-active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Floyd Miles</td>
+                <td>Yahoo</td>
+                <td>(205) 555-0100</td>
+                <td>floyd@yahoo.com</td>
+                <td>Kiribati</td>
+                <td><span class="status status-inactive">Inactive</span></td>
+              </tr>
+              <tr>
+                <td>Ronald Richards</td>
+                <td>Adobe</td>
+                <td>(302) 555-0107</td>
+                <td>ronald@adobe.com</td>
+                <td>Israel</td>
+                <td><span class="status status-inactive">Inactive</span></td>
+              </tr>
+              <tr>
+                <td>Marvin McKinney</td>
+                <td>Tesla</td>
+                <td>(252) 555-0126</td>
+                <td>marvin@tesla.com</td>
+                <td>Iran</td>
+                <td><span class="status status-active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Jerome Bell</td>
+                <td>Google</td>
+                <td>(629) 555-0129</td>
+                <td>jerome@google.com</td>
+                <td>Réunion</td>
+                <td><span class="status status-active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Kathryn Murphy</td>
+                <td>Microsoft</td>
+                <td>(406) 555-0120</td>
+                <td>kathryn@microsoft.com</td>
+                <td>Curaçao</td>
+                <td><span class="status status-active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Jacob Jones</td>
+                <td>Yahoo</td>
+                <td>(208) 555-0112</td>
+                <td>jacob@yahoo.com</td>
+                <td>Brazil</td>
+                <td><span class="status status-active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Kristin Watson</td>
+                <td>Facebook</td>
+                <td>(704) 555-0127</td>
+                <td>kristin@facebook.com</td>
+                <td>Åland Islands</td>
+                <td><span class="status status-inactive">Inactive</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="desk__bottom">
+          <div class="desk__bottom_left">
+            <span>Showing data 1 to 8 of 256K entries</span>
+          </div>
+          <div class="desk__bottom_right">
+            <ul class="desk__pagination">
+              <li class="desk__pagination_item">
+                <button class="desk__pagination_link"><</button>
+              </li>
+              <li class="desk__pagination_item desk__pagination_item-active">
+                <button class="desk__pagination_link">1</button>
+              </li>
+              <li class="desk__pagination_item">
+                <button class="desk__pagination_link">2</button>
+              </li>
+              <li class="desk__pagination_item">
+                <button class="desk__pagination_link">3</button>
+              </li>
+              <li class="desk__pagination_item">
+                <button class="desk__pagination_link">4</button>
+              </li>
+              <li class="desk__pagination_item">
+                <span>...</span>
+              </li>
+              <li class="desk__pagination_item">
+                <a href="#" class="desk__pagination_link">40</a>
+              </li>
+              <li class="desk__pagination_item">
+                <button class="desk__pagination_link">></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
