@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: https://www.google.com/
+
+
+Host: https://kinolog76.github.io/websites-template/spaceman-jogo/
+Sitemap: https://kinolog76.github.io/websites-template/spaceman-jogo//sitemap.xml
