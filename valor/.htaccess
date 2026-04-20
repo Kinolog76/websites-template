@@ -1,0 +1,22 @@
+RewriteEngine On
+ErrorDocument 404 /404.html
+Redirect 301 /404.html /
+
+# Перенаправление www на не-www
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+
+# Редирект с /index.html на главную страницу
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Редирект с /index.php на главную страницу
+RewriteRule ^index\.php$ / [R=301,L]
+
+# Удаление лишних слешей
+RewriteCond %{THE_REQUEST} //
+RewriteRule ^.*$ /$0 [R=301,L]
+
+# Редирект с 404 на главную страницу
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule 404 / [L,R=301]

@@ -1,0 +1,110 @@
+* {
+  scroll-behavior: smooth;
+}
+.mobile-menu__closeButton * {
+  stroke: #fff;
+}
+.article__body table {
+  overflow-wrap: anywhere;
+}
+.mobile-menu__countrySelector[disabled] {
+  background: rgba(151, 174, 225, 0.11);
+  color: #fff;
+}
+figure.table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.breadcrumbs .breadcrumbs__item:last-child a {
+  cursor: default;
+  pointer-events: none;
+}
+.scroll-to-top {
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.scroll-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+.game-card__play {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background: #c2c2c2;
+  color: #000000;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.3s;
+}
+.game-card:hover .game-card__play {
+  opacity: 1;
+  visibility: visible;
+}
+.faq__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.faq__title span:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  background-color: var(--valor-surface-subdued);
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s;
+}
+.faq__title.active span:nth-child(2) {
+  transform: rotate(180deg);
+}
+figure.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+figure.image.image-style-block-align-left {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 0 auto 0 0;
+}
+figure.image.image-style-block-align-right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0 0 0 auto;
+}
+@media (max-width: 767.98px){
+  .menu {
+      display: none;
+  }
+}
+@media (max-width: 474.98px) {
+  .header {
+      position: fixed;
+      left: 0;
+      right: 0;
+  }
+  .app__main {
+      margin-top: 100px;
+  }
+}

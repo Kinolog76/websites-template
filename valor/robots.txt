@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: https://www.google.com
+
+
+Host: https://test15.saitkotika.ru
+Sitemap: https://test15.saitkotika.ru/sitemap.xml
